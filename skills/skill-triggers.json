@@ -1,0 +1,538 @@
+{
+  "skills": [
+    {
+      "id": "skill-magazine",
+      "description": "适用于排版精美、阅读体验优先的长文内容。适合写杂志文章、博客长文、电子指南/白皮书等以文字为主的创作场景。当用户说「写一篇杂志风格的文章」「做一个 Medium 风格的博客」「帮我排一篇长文」「做一份电子指南/白皮书」时触发。产出的是 A4/长页面格式的图文排版 HTML。",
+      "templates": [
+        {
+          "id": "article-magazine",
+          "title": "杂志文章",
+          "usage": "Substack/Medium 高级感长文排版，适合公众号、博客发布"
+        },
+        {
+          "id": "blog-post",
+          "title": "博客长文",
+          "usage": "杂志感长文，含 masthead、hero、figures、pull quote、作者署名"
+        },
+        {
+          "id": "digital-eguide",
+          "title": "电子指南",
+          "usage": "两页跨页电子指南，封面 + 课程页 + pull-quote + 步骤列表"
+        }
+      ]
+    },
+    {
+      "id": "skill-deck",
+      "description": "适用于所有横向翻页 / Keynote 风格的幻灯片演示场景。包括投资人路演、产品发布、技术分享、课程培训、个人生活记录等多种风格的 deck。当用户说「帮我做一份 PPT」「做一个 pitch deck」「做一个产品发布 Keynote」「技术分享幻灯片」「培训课件」「小红书图文 deck」「周报幻灯片」「投资人演示」时触发。支持 16:9 横版及 3:4 竖版图文格式。",
+      "templates": [
+        {
+          "id": "deck-blueprint",
+          "title": "蓝图架构 Deck",
+          "usage": "架构 / pipeline 讲解风格的工程演示"
+        },
+        {
+          "id": "deck-course-module",
+          "title": "课程 / 培训 Deck",
+          "usage": "教学 / workshop 用暖纸背景幻灯片，含 MCQ 自测"
+        },
+        {
+          "id": "deck-dir-key-nav",
+          "title": "极简方向键 Keynote",
+          "usage": "极简单色 Keynote，适合有话要说但无需视觉堆砌的场景"
+        },
+        {
+          "id": "deck-graphify-dark",
+          "title": "暗底图谱 Deck",
+          "usage": "AI-native / 知识图谱 / dev-tool 发布用深色 deck"
+        },
+        {
+          "id": "deck-guizang-editorial",
+          "title": "贵赞编辑墨水 Deck",
+          "usage": "电子杂志 × 电子墨水风，10 个版面 + 5 套调色板"
+        },
+        {
+          "id": "deck-hermes-cyber",
+          "title": "Cyber Terminal Deck",
+          "usage": "CRT 终端风格，适合 CLI / agent / dev tool 测评"
+        },
+        {
+          "id": "deck-magazine-web",
+          "title": "杂志风网页 PPT",
+          "usage": "电子杂志 × e-ink 风，WebGL 流体背景 + horizontal swipe"
+        },
+        {
+          "id": "deck-obsidian-claude",
+          "title": "GitHub Dark 紫渐变 Deck",
+          "usage": "GitHub-dark 风格，适合开发者教程 / MCP 讲解"
+        },
+        {
+          "id": "deck-open-slide-canvas",
+          "title": "1920 画布自由 Deck",
+          "usage": "1920×1080 锁定画布，React 组件自由组合，不绑模板"
+        },
+        {
+          "id": "deck-pitch",
+          "title": "投资人 Pitch Deck",
+          "usage": "10 页融资 deck，白底 + 蓝紫渐变 hero + traction 图表"
+        },
+        {
+          "id": "deck-presenter-mode",
+          "title": "演讲者模式 Deck",
+          "usage": "含逐字稿提词器和 popup teleprompter 的演讲专用 deck"
+        },
+        {
+          "id": "deck-product-launch",
+          "title": "产品发布 Keynote",
+          "usage": "暗 hero + 亮内容的 Keynote 风格发布 deck"
+        },
+        {
+          "id": "deck-replit",
+          "title": "Replit Slides 风 Deck",
+          "usage": "Replit Slides 八套主题风格（helix/holm/vance 等）"
+        },
+        {
+          "id": "deck-safety-alert",
+          "title": "安全 / 风险红色 Deck",
+          "usage": "红琥珀警示色 + hazard 条纹，事故复盘 / 安全政策用"
+        },
+        {
+          "id": "deck-simple",
+          "title": "通用 Simple Deck",
+          "usage": "干净通用的 horizontal-swipe HTML deck，无特定风格"
+        },
+        {
+          "id": "deck-swiss-international",
+          "title": "瑞士国际主义 Deck",
+          "usage": "16 列网格 + 单一饱和 accent，22 个锁死版面"
+        },
+        {
+          "id": "deck-tech-sharing",
+          "title": "技术分享 Deck",
+          "usage": "GitHub-dark + 终端代码块，工程内部分享 / 会议 talk"
+        },
+        {
+          "id": "deck-xhs-pastel",
+          "title": "马卡龙慢生活 Deck",
+          "usage": "奶油底 + 柔光 blob，生活方式 / 个人成长 / 情绪向内容"
+        },
+        {
+          "id": "deck-xhs-post",
+          "title": "小红书图文 Deck",
+          "usage": "9 页 3:4 竖版图文，适合小红书 / Instagram carousel"
+        },
+        {
+          "id": "deck-xhs-white",
+          "title": "白底杂志风 Deck",
+          "usage": "纯白 + 彩虹 bar，可同时发小红书与横版 PPT 双用"
+        },
+        {
+          "id": "ppt-keynote",
+          "title": "Keynote 风格 PPT",
+          "usage": "苹果 Keynote 级别幻灯片，一屏一卡键盘左右切换"
+        },
+        {
+          "id": "ppt-course-module",
+          "title": "course module",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-dir-key-nav-minimal",
+          "title": "dir key nav minimal",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-graphify-dark-graph",
+          "title": "graphify dark graph",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-guizang-editorial",
+          "title": "guizang editorial",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-hermes-cyber-terminal",
+          "title": "hermes cyber terminal",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-knowledge-arch-blueprint",
+          "title": "knowledge arch blueprint",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-magazine-web",
+          "title": "magazine web",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-obsidian-claude-gradient",
+          "title": "obsidian claude gradient",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-open-slide-canvas",
+          "title": "open slide canvas",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-pitch-deck",
+          "title": "pitch deck",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-presenter-mode-reveal",
+          "title": "presenter mode reveal",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-product-launch",
+          "title": "product launch",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-replit",
+          "title": "replit",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-simple",
+          "title": "simple",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-swiss-international",
+          "title": "swiss international",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-tech-sharing",
+          "title": "tech sharing",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-testing-safety-alert",
+          "title": "testing safety alert",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-weekly-report",
+          "title": "weekly report",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-xhs-pastel-card",
+          "title": "xhs pastel card",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-xhs-post",
+          "title": "xhs post",
+          "usage": "PPT 模式模板"
+        },
+        {
+          "id": "ppt-xhs-white-editorial",
+          "title": "xhs white editorial",
+          "usage": "PPT 模式模板"
+        }
+      ]
+    },
+    {
+      "id": "skill-poster",
+      "description": "适用于竖版 / 横版视觉冲击型海报场景。包括杂志风长图海报、营销朋友圈分享图、手绘线框草图等非交互式视觉输出。当用户说「做一张海报」「朋友圈分享图」「杂志风格海报」「画一个线框图」「marketing poster」时触发。产出 9:16 竖版或 16:9 横版视觉页。",
+      "templates": [
+        {
+          "id": "magazine-poster",
+          "title": "杂志风海报",
+          "usage": "Sunday-paper 风格，大字 serif headline + 双栏正文 + 编号 sections"
+        },
+        {
+          "id": "poster-hero",
+          "title": "营销海报",
+          "usage": "竖版 1080×1920 朋友圈分享图，强视觉冲击"
+        },
+        {
+          "id": "wireframe-sketch",
+          "title": "手绘线框图",
+          "usage": "网格背景 + marker 笔触 + 多 tab + sticky note，白板草稿风格"
+        }
+      ]
+    },
+    {
+      "id": "skill-card",
+      "description": "适用于社交媒体分享卡片和品牌视觉卡片。包括 Twitter/X 金句卡、小红书知识卡、Reddit 帖子卡、Spotify 播放卡、社交媒体三连轮播等。当用户说「做一张社交媒体卡片」「Twitter 金句卡」「小红书知识卡片」「Reddit 帖子卡」「Spotify 播放卡」「品牌社交图卡」时触发。支持 16:9、3:4、1080×1080 等多种比例。",
+      "templates": [
+        {
+          "id": "card-twitter",
+          "title": "Twitter 分享卡",
+          "usage": "推特金句 / 数据卡，16:9 暗色/亮色，适合配推文"
+        },
+        {
+          "id": "card-xiaohongshu",
+          "title": "小红书图文卡片",
+          "usage": "小红书风格知识卡片，1080×1440 多张联排可滑动"
+        },
+        {
+          "id": "social-carousel",
+          "title": "社交媒体三联",
+          "usage": "三张 1080×1080 方形卡片轮播，标题跨张串联"
+        },
+        {
+          "id": "social-reddit-card",
+          "title": "Reddit 帖子卡",
+          "usage": "拟真 Reddit 帖子卡，含投票 + 评论数，适合视频叠加"
+        },
+        {
+          "id": "social-spotify-card",
+          "title": "Spotify 正在播放卡",
+          "usage": "Spotify Now Playing 风格卡，专辑封面 + 进度条 + 播放控制"
+        },
+        {
+          "id": "social-x-post-card",
+          "title": "X (Twitter) 帖子卡",
+          "usage": "拟真 X 推文卡片，含 likes/reposts/views 互动数据"
+        }
+      ]
+    },
+    {
+      "id": "skill-prototype",
+      "description": "适用于 Web/App 产品原型和落地页预览场景。包括功能性 Web 原型、SaaS 落地页、定价页、等候名单页、后台仪表板、手机 App 预览和多屏引导。当用户说「做一个 Web 原型」「产品落地页」「SaaS 定价页」「等候列表」「管理后台」「App 设计预览」「产品原型图」时触发。产出桌面 1440 或 iPhone 多屏预览格式。",
+      "templates": [
+        {
+          "id": "prototype-web",
+          "title": "Web 产品原型",
+          "usage": "可点击的功能性 Web 原型，含导航、英雄区、特性区、CTA"
+        },
+        {
+          "id": "web-proto-brutalist",
+          "title": "Brutalist 原型",
+          "usage": "Swiss industrial-print 风原型，单字 grotesque + 巨数字 + ASCII 装饰"
+        },
+        {
+          "id": "web-proto-editorial",
+          "title": "Editorial 原型",
+          "usage": "杂志感 minimalist 原型，暖色 canvas + serif display"
+        },
+        {
+          "id": "web-proto-soft",
+          "title": "Apple Soft 原型",
+          "usage": "Apple 调软质感原型，squircle + spring motion + ambient mesh"
+        },
+        {
+          "id": "saas-landing",
+          "title": "SaaS Landing",
+          "usage": "完整 SaaS 产品落地页，hero/features/social-proof/pricing/CTA"
+        },
+        {
+          "id": "pricing-page",
+          "title": "定价页",
+          "usage": "三档定价 + 特性对比表 + FAQ 标准定价页"
+        },
+        {
+          "id": "waitlist-page",
+          "title": "等候名单页",
+          "usage": "极简产品预发布落地页，含邮箱捕获、logo、装饰图层"
+        },
+        {
+          "id": "dashboard",
+          "title": "管理后台仪表板",
+          "usage": "标准 admin/analytics 仪表板，固定侧栏 + 顶栏 + KPI 网格 + 图表"
+        },
+        {
+          "id": "live-dashboard",
+          "title": "Notion 风团队仪表板",
+          "usage": "Notion 风团队动态总览，KPI + sparkline + activity feed + 任务表"
+        },
+        {
+          "id": "mobile-app",
+          "title": "iPhone App 单屏",
+          "usage": "像素级 iPhone 15 Pro 边框内的单屏 App 设计"
+        },
+        {
+          "id": "mobile-onboarding",
+          "title": "App 引导多屏",
+          "usage": "三个手机框并排展示 splash / value-prop / sign-in"
+        },
+        {
+          "id": "gamified-app",
+          "title": "游戏化 App 多屏",
+          "usage": "三屏暗色舞台：封面 / 今日任务带 XP / 任务详情"
+        },
+        {
+          "id": "dating-web",
+          "title": "社区 / 配对数据墙",
+          "usage": "消费感配对仪表板，信号 ticker + KPI + 30 天柱状 + 趋势"
+        }
+      ]
+    },
+    {
+      "id": "skill-report",
+      "description": "适用于数据密集和财务分析类的报告场景。包括数据可视化报告、季度财报、团队管理看板、社媒创作者数据仪表板等。当用户说「做一个数据报告」「财报分析」「可视化周报」「团队数据看板」「社媒数据面板」「流量分析报告」时触发。产出桌面长页格式的数据密集型页面。",
+      "templates": [
+        {
+          "id": "data-report",
+          "title": "数据可视化报告",
+          "usage": "把 CSV/Excel/JSON 数据转成漂亮的可视化报告页"
+        },
+        {
+          "id": "finance-report",
+          "title": "季度财报",
+          "usage": "Masthead + KPI + 收入/烧钱图 + P&L 表 + 重点 + 展望"
+        },
+        {
+          "id": "flowai-team-dashboard",
+          "title": "FlowAI 团队管理",
+          "usage": "三个 tab 的团队管理后台，含图表 + CSV 导出"
+        },
+        {
+          "id": "social-media-dashboard",
+          "title": "社媒创作者仪表板",
+          "usage": "面向博主/创作者的跨平台社媒数据看板"
+        },
+        {
+          "id": "social-media-matrix",
+          "title": "社媒矩阵追踪面板",
+          "usage": "电影感多平台社媒分析，互动图 + 区间对比 + 明暗主题"
+        }
+      ]
+    },
+    {
+      "id": "skill-frame",
+      "description": "适用于视频场景中的单帧视觉素材和视频脚本制作。包括数据图表帧、流程图帧、故障艺术标题、胶片漏光开场、流体背景 Hero、品牌 Logo 收尾、macOS 通知叠加层，以及完整的 Hyperframes 视频脚本。当用户说「做一个视频片头」「视频标题帧」「图表动画帧」「流程图动画」「视频收尾 Logo」「通知叠加」「Hyperframes 视频脚本」时触发。产出 1920×1080 16:9 视频帧格式。",
+      "templates": [
+        {
+          "id": "frame-data-chart-nyt",
+          "title": "NYT 风数据图表帧",
+          "usage": "NYT-newsroom 排版 + 编辑级图表 + 错峰揭示动画"
+        },
+        {
+          "id": "frame-flowchart-sticky",
+          "title": "便利贴流程图帧",
+          "usage": "SVG 曲线连接 + 便利贴节点，白板 brainstorm 风格"
+        },
+        {
+          "id": "frame-glitch-title",
+          "title": "故障艺术标题帧",
+          "usage": "数字故障 / 像散偏移 / 数据腐败标题，适合 cyberpunk hero"
+        },
+        {
+          "id": "frame-light-leak-cinema",
+          "title": "胶片漏光电影帧",
+          "usage": "胶片漏光 + 颗粒噪点 + 衬线大字，电影感开场 / 章节卡"
+        },
+        {
+          "id": "frame-liquid-bg-hero",
+          "title": "流体背景 Hero 帧",
+          "usage": "WebGL 风流体置换背景 + 金句叠加，视频片头 / 海报通用"
+        },
+        {
+          "id": "frame-logo-outro",
+          "title": "品牌 Logo 收尾帧",
+          "usage": "Logo 分块组装入场 + glow bloom + tagline 揭示"
+        },
+        {
+          "id": "frame-macos-notification",
+          "title": "macOS 通知横幅",
+          "usage": "拟真 macOS 通知 banner，适合 video overlay / 产品发布预告"
+        },
+        {
+          "id": "video-hyperframes",
+          "title": "Hyperframes 视频脚本",
+          "usage": "Hyperframes/Remotion 兼容的连续帧动画，可自动播放"
+        }
+      ]
+    },
+    {
+      "id": "skill-doc",
+      "description": "适用于各种文档和办公内容场景。包括羊皮纸风格文档、技术文档页、营销邮件、工程 Runbook、PRD 产品需求、新员工入职页、可打印发票、看板、会议纪要、OKR 追踪、周报幻灯片及极简简历等。当用户说「写一份文档」「技术文档」「PRD 需求文档」「邮件营销模板」「Runbook」「会议纪要」「OKR 看板」「团队周报」「简历」「入职指南」时触发。产出的格式涵盖 A4 长页面、桌面 1440、邮件 600px 宽等。",
+      "templates": [
+        {
+          "id": "doc-kami-parchment",
+          "title": "Kami 羊皮纸文档",
+          "usage": "暖羊皮纸底 + 衬线字体，编辑级排印的 one-pager"
+        },
+        {
+          "id": "docs-page",
+          "title": "技术文档页",
+          "usage": "三栏文档页：侧导航 + 正文 + 右 TOC，API / 教程用"
+        },
+        {
+          "id": "email-marketing",
+          "title": "营销邮件",
+          "usage": "600px 单栏产品发布邮件，兼容邮件客户端 + table-fallback"
+        },
+        {
+          "id": "eng-runbook",
+          "title": "工程 Runbook",
+          "usage": "服务概述 + alerts 表 + 操作命令 + on-call + 事故清单"
+        },
+        {
+          "id": "pm-spec",
+          "title": "PRD / 产品 Spec",
+          "usage": "产品需求文档单页：问题 + 指标 + 范围 + user stories + 设计"
+        },
+        {
+          "id": "hr-onboarding",
+          "title": "新员工入职页",
+          "usage": "首周日程 + buddy + 学习路径 + 设备 + 完成标准"
+        },
+        {
+          "id": "invoice",
+          "title": "可打印发票",
+          "usage": "A4 可打印发票：寄件/收件 + 明细 + 税 + 总额 + 付款指引"
+        },
+        {
+          "id": "kanban-board",
+          "title": "看板 / Kanban",
+          "usage": "To do / In progress / Review / Done 四列，卡片 + 头像 + 泳道"
+        },
+        {
+          "id": "meeting-notes",
+          "title": "会议纪要",
+          "usage": "标题 + 出席 + 议程 + 决议 + action items + 下次议程"
+        },
+        {
+          "id": "team-okrs",
+          "title": "团队 OKR 追踪",
+          "usage": "季度 banner + 目标 + KR 进度条 + owner + 状态 pill"
+        },
+        {
+          "id": "weekly-update",
+          "title": "团队周报 Deck",
+          "usage": "6-8 页横向滑动周报：已发布 / 进行中 / 阻塞 / 指标 / 求助"
+        },
+        {
+          "id": "resume-modern",
+          "title": "极简简历",
+          "usage": "A4 单页现代极简简历，适合打印或导出 PDF"
+        }
+      ]
+    },
+    {
+      "id": "skill-vfx",
+      "description": "适用于特效动画和装饰性视觉素材场景。包括文字光标拖光特效、像素风 8-bit 动画解说帧、循环动效英雄帧、以及 iPhone × MacBook 立体产品展架。当用户说「做一个 VFX 文字特效」「像素动画解说」「动效循环背景」「产品立体展架」「设备 Mockup 展示」时触发。产出 16:9 横版或竖版/横版均可的视觉帧。",
+      "templates": [
+        {
+          "id": "vfx-text-cursor",
+          "title": "VFX 文字光标",
+          "usage": "光标拖光 + 彩色像散射线 + 定向光斑，视频片头逐字揭示金句"
+        },
+        {
+          "id": "sprite-animation",
+          "title": "像素动画解说",
+          "usage": "像素美术 + kinetic 字体的解说帧，纯 CSS 循环可录视频"
+        },
+        {
+          "id": "motion-frames",
+          "title": "动效英雄帧",
+          "usage": "可循环 CSS 动效组合：旋转环、地球仪、计时器、视差标签"
+        },
+        {
+          "id": "mockup-device-3d",
+          "title": "iPhone × MacBook 立体展架",
+          "usage": "仿 GLTF 静态 3D 展架，屏幕内嵌真实 HTML 内容 + 玻璃折射"
+        }
+      ]
+    }
+  ]
+}

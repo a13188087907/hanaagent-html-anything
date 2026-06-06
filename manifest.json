@@ -1,0 +1,62 @@
+{
+  "manifestVersion": 1,
+  "id": "html-anything",
+  "name": "HTML Anything",
+  "version": "0.4.0",
+  "description": "AI-powered HTML editor with 75 professional templates. Generate, preview, edit, and export beautiful HTML content.",
+  "license": "MIT",
+  "minAppVersion": "0.170.0",
+  "trust": "full-access",
+  "activationEvents": ["onStartup"],
+  "ui": {
+    "hostCapabilities": ["external.open", "clipboard.writeText", "theme"]
+  },
+  "contributes": {
+    "page": {
+      "title": "HTML Anything",
+      "route": "/page",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M5 5h14v14H5z\"/><path d=\"M9 9h6M9 13h6\"/></svg>"
+    },
+    "configuration": {
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "title": "LLM API Key",
+          "description": "用于生成 HTML 的大语言模型 API Key（OpenAI 兼容格式）",
+          "sensitive": true,
+          "ui": { "control": "password" }
+        },
+        "baseUrl": {
+          "type": "string",
+          "title": "API Base URL",
+          "description": "OpenAI 兼容的 API 地址",
+          "default": "https://api.openai.com/v1"
+        },
+        "modelName": {
+          "type": "string",
+          "title": "模型名称",
+          "description": "用于生成 HTML 的模型 ID",
+          "default": "gpt-4o"
+        }
+      }
+    }
+  },
+  "dev": {
+    "scenarios": [
+      {
+        "id": "smoke-preview-html",
+        "steps": [
+          {
+            "invokeTool": {
+              "name": "html-anything_preview_html",
+              "input": {
+                "html": "<html><body><h1>Hello HTML Anything</h1></body></html>"
+              }
+            }
+          },
+          { "expectToolText": "HTML" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "layoutId": "arch-diagram",
+    "name": "架构图",
+    "category": "plans",
+    "description": "三层架构网格图",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Architecture · 系统总览</p>\n  <h2 class=\"h2\">一套三层栈</h2>\n  <div class=\"arch anim-stagger-list\" data-anim-target>\n    <div class=\"tier\"><div class=\"tname\">UI Layer</div>\n      <div class=\"cells\"><div class=\"cell\"><div class=\"ic\">🧱</div><h4>Layouts</h4><p>30 个单页</p></div>\n        <div class=\"cell\"><div class=\"ic\">🎨</div><h4>Themes</h4><p>24 tokens 主题</p></div>\n        <div class=\"cell\"><div class=\"ic\">✨</div><h4>Animations</h4><p>25 个命名动效</p></div>\n        <div class=\"cell\"><div class=\"ic\">⌨️</div><h4>Runtime</h4><p>键盘导航</p></div>\n      </div>\n    </div>\n    <div class=\"tier hl\"><div class=\"tname\">Core · tokens</div>\n      <div class=\"cells three\"><div class=\"cell\"><div class=\"ic\">🎯</div><h4>base.css</h4><p>排版 + 网格</p></div>\n        <div class=\"cell\"><div class=\"ic\">🔤</div><h4>fonts.css</h4><p>中英字体</p></div>\n        <div class=\"cell\"><div class=\"ic\">🪞</div><h4>:root vars</h4><p>语义颜色</p></div>\n      </div>\n    </div>\n    <div class=\"tier\"><div class=\"tname\">Tooling</div>\n      <div class=\"cells three\"><div class=\"cell\"><div class=\"ic\">🧪</div><h4>render.sh</h4><p>headless Chrome</p></div>\n        <div class=\"cell\"><div class=\"ic\">🆕</div><h4>new-deck.sh</h4><p>脚手架</p></div>\n        <div class=\"cell\"><div class=\"ic\">📦</div><h4>AgentSkill</h4><p>Claude 接入点</p></div>\n      </div>\n    </div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "big-quote",
+    "name": "大段引用",
+    "category": "text-centric",
+    "description": "全出血拉引引用，编辑衬线风格",
+    "htmlSnippet": "<section class=\"slide center tc\">\n  <div style=\"max-width:1040px\">\n    <div class=\"serif\" style=\"font-size:140px;line-height:.9;color:var(--accent);opacity:.6\">\"</div>\n    <blockquote class=\"serif anim-fade-up\" style=\"font-size:56px;line-height:1.25;margin:-40px 0 24px;font-style:italic;font-weight:600\">\n      好的设计不是把东西加得更多，<br>而是把一切不需要的东西拿掉。\n    </blockquote>\n    <p class=\"dim\" style=\"font-size:20px;letter-spacing:.08em\">— Dieter Rams</p>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "bullets",
+    "name": "要点列表",
+    "category": "text-centric",
+    "description": "经典要点列表，卡片包裹的条目",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Why · 为什么</p>\n  <h2 class=\"h2\">好的演讲系统，帮你做三件事</h2>\n  <p class=\"lede mb-l\">不是做不出漂亮的 slide，是每次都要重新做。</p>\n  <ul class=\"grid g1 anim-stagger-list\" style=\"list-style:none;padding:0;margin:0;gap:14px\" data-anim-target>\n    <li class=\"card card-accent\"><h4>① 统一设计语言</h4><p class=\"dim\">所有页共用同一套 tokens，字号、颜色、阴影不会跑偏。</p></li>\n    <li class=\"card card-accent\"><h4>② 降低复用成本</h4><p class=\"dim\">下一次讲同类话题，复制 deck、换数据、换主题即可。</p></li>\n    <li class=\"card card-accent\"><h4>③ 可切换，可演示</h4><p class=\"dim\">按 T 即可循环切主题、按 A 可切动效，汇报现场加分。</p></li>\n  </ul>\n</section>"
+  },
+  {
+    "layoutId": "chart-bar",
+    "name": "柱状图",
+    "category": "visuals",
+    "description": "Chart.js 柱状图，主题感知颜色",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Chart · 柱状图</p>\n  <h2 class=\"h2\">季度 MRR 趋势</h2>\n  <div class=\"card mt-l\" style=\"height:520px;padding:28px\"><canvas id=\"c\"></canvas></div>\n  <script>\n    addEventListener('DOMContentLoaded',()=>{\n      const css=getComputedStyle(document.documentElement);\n      const accent=css.getPropertyValue('--accent').trim();\n      const text2=css.getPropertyValue('--text-2').trim();\n      const border=css.getPropertyValue('--border').trim();\n      new Chart(document.getElementById('c'),{type:'bar',\n        data:{labels:['Q1','Q2','Q3','Q4','Q1 +1','Q2 +1','Q3 +1','Q4 +1'],\n          datasets:[{label:'MRR (K)',data:[42,58,73,96,124,158,204,261],\n            backgroundColor:accent,borderRadius:8,barThickness:36}]},\n        options:{plugins:{legend:{labels:{color:text2}}},\n          scales:{x:{ticks:{color:text2},grid:{color:border}},\n                  y:{ticks:{color:text2},grid:{color:border}}}}});\n    });\n  </script>\n</section>"
+  },
+  {
+    "layoutId": "chart-line",
+    "name": "折线图",
+    "category": "visuals",
+    "description": "Chart.js 双折线图，带填充区域",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Chart · 折线图</p>\n  <h2 class=\"h2\">日活与留存并排看</h2>\n  <div class=\"card mt-l\" style=\"height:520px;padding:28px\"><canvas id=\"c\"></canvas></div>\n  <script>\n    addEventListener('DOMContentLoaded',()=>{\n      const css=getComputedStyle(document.documentElement);\n      const accent=css.getPropertyValue('--accent').trim();\n      const acc2=css.getPropertyValue('--accent-2').trim();\n      const text2=css.getPropertyValue('--text-2').trim();\n      const border=css.getPropertyValue('--border').trim();\n      new Chart(document.getElementById('c'),{type:'line',\n        data:{labels:['W1','W2','W3','W4','W5','W6','W7','W8','W9','W10','W11','W12'],\n          datasets:[\n            {label:'DAU (K)',data:[12,14,15,19,24,28,33,38,45,51,58,66],\n              borderColor:accent,backgroundColor:accent+'22',fill:true,tension:.4,borderWidth:3,pointRadius:4},\n            {label:'Retention %',data:[38,40,42,45,48,50,53,55,58,60,62,64],\n              borderColor:acc2,backgroundColor:acc2+'22',fill:true,tension:.4,borderWidth:3,pointRadius:4}\n          ]},\n        options:{plugins:{legend:{labels:{color:text2}}},\n          scales:{x:{ticks:{color:text2},grid:{color:border}},\n                  y:{ticks:{color:text2},grid:{color:border}}}}});\n    });\n  </script>\n</section>"
+  },
+  {
+    "layoutId": "chart-pie",
+    "name": "饼图/环形图",
+    "category": "visuals",
+    "description": "Chart.js 环形图 + 要点卡片",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Chart · 环形图</p>\n  <h2 class=\"h2\">时间都花在了哪里</h2>\n  <div class=\"grid g2 mt-l\" style=\"align-items:center\">\n    <div class=\"card\" style=\"height:460px;padding:28px\"><canvas id=\"c\"></canvas></div>\n    <div class=\"card\">\n      <h4>Takeaways</h4>\n      <p class=\"dim\">超过一半的时间都在写内容，动效只占 5%。说明值得把动效做成可复用模板。</p>\n      <ul class=\"mt-m dim\">\n        <li>✍️ 写内容 &nbsp; 55%</li><li>🧩 挑版式 &nbsp; 18%</li><li>🎨 调样式 &nbsp; 14%</li>\n        <li>📸 出图 &nbsp; 8%</li><li>✨ 动效 &nbsp; 5%</li>\n      </ul>\n    </div>\n  </div>\n  <script>\n    addEventListener('DOMContentLoaded',()=>{\n      const css=getComputedStyle(document.documentElement);\n      const colors=['--accent','--accent-2','--accent-3','--good','--warn'].map(k=>css.getPropertyValue(k).trim());\n      const text2=css.getPropertyValue('--text-2').trim();\n      new Chart(document.getElementById('c'),{type:'doughnut',\n        data:{labels:['写内容','挑版式','调样式','出图','动效'],\n          datasets:[{data:[55,18,14,8,5],backgroundColor:colors,borderWidth:0}]},\n        options:{cutout:'62%',plugins:{legend:{position:'right',labels:{color:text2}}}}});\n    });\n  </script>\n</section>"
+  },
+  {
+    "layoutId": "chart-radar",
+    "name": "雷达图",
+    "category": "visuals",
+    "description": "Chart.js 雷达图，2 产品 6 维度对比",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Chart · 雷达图</p>\n  <h2 class=\"h2\">把 html-ppt 和竞品放一张图</h2>\n  <div class=\"card mt-l\" style=\"height:520px;padding:28px\"><canvas id=\"c\"></canvas></div>\n  <script>\n    addEventListener('DOMContentLoaded',()=>{\n      const css=getComputedStyle(document.documentElement);\n      const a1=css.getPropertyValue('--accent').trim();\n      const a2=css.getPropertyValue('--accent-2').trim();\n      const text2=css.getPropertyValue('--text-2').trim();\n      new Chart(document.getElementById('c'),{type:'radar',\n        data:{labels:['上手','美观','自定义','性能','导出','生态'],\n          datasets:[\n            {label:'html-ppt',data:[9,9,10,10,9,6],borderColor:a1,backgroundColor:a1+'33',borderWidth:3,pointRadius:5},\n            {label:'reveal.js',data:[8,7,9,8,8,10],borderColor:a2,backgroundColor:a2+'22',borderWidth:3,pointRadius:5}]},\n        options:{plugins:{legend:{labels:{color:text2}}},\n          scales:{r:{suggestedMin:0,suggestedMax:10,ticks:{color:text2,backdropColor:'transparent'},\n                     pointLabels:{color:text2,font:{size:14}},grid:{color:'rgba(0,0,0,.08)'},angleLines:{color:'rgba(0,0,0,.08)'}}}}});\n    });\n  </script>\n</section>"
+  },
+  {
+    "layoutId": "code",
+    "name": "代码展示",
+    "category": "code",
+    "description": "语法高亮代码（highlight.js JS 示例）",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Snippet · 运行时核心</p>\n  <h2 class=\"h2\">按一下键盘，幻灯片就跑起来了</h2>\n<pre class=\"card mt-m\" style=\"padding:24px\"><code class=\"language-javascript\">// runtime.js — keyboard-driven deck\nfunction go(n) {\n  n = Math.max(0, Math.min(total - 1, n));\n  slides.forEach((s, i) => {\n    s.classList.toggle('is-active', i === n);\n  });\n  idx = n;\n  barFill.style.width = ((n + 1) / total * 100) + '%';\n  history.replaceState(null, '', '#/' + (n + 1));\n}\n\ndocument.addEventListener('keydown', (e) =&gt; {\n  if (e.key === 'ArrowRight' || e.key === ' ') go(idx + 1);\n  if (e.key === 'ArrowLeft') go(idx - 1);\n  if (e.key === 't') cycleTheme();\n});</code></pre>\n</section>"
+  },
+  {
+    "layoutId": "comparison",
+    "name": "前后对比",
+    "category": "text-centric",
+    "description": "Before vs After 双面板对比",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Before vs After · 对比</p>\n  <h2 class=\"h2\">从「每次重做」到「一键起稿」</h2>\n  <div class=\"vs\">\n    <div class=\"card bad-side side anim-fade-left\">\n      <h3>📉 过去</h3>\n      <ul>\n        <li>每次都要重新做封面、目录、结语</li>\n        <li>颜色、字号跨 slide 不一致</li>\n        <li>想换主题？手动改每一页</li>\n        <li>动效全靠 transition 硬写</li>\n        <li>截图导出还要一张一张截</li>\n      </ul>\n    </div>\n    <div class=\"mid\">→</div>\n    <div class=\"card good-side side anim-fade-right\">\n      <h3>📈 现在</h3>\n      <ul>\n        <li>复制模板、换数据、完事</li>\n        <li>所有页共享 tokens</li>\n        <li>按 <b>T</b> 循环切主题</li>\n        <li>25 个命名动效直接挑</li>\n        <li>一条 render.sh 全部出图</li>\n      </ul>\n    </div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "cover",
+    "name": "封面页",
+    "category": "opener",
+    "description": "开场封面页，含 kicker、大标题、副标题、pill 标签",
+    "htmlSnippet": "<section class=\"slide\">\n    <div class=\"deck-header\"><span class=\"eyebrow\">Keynote · 2026</span><span class=\"eyebrow\">html-ppt</span></div>\n    <div class=\"anim-stagger-list\">\n      <p class=\"kicker\">Tech Sharing · 纯干货</p>\n      <h1 class=\"h1 anim-fade-up\">\n        设计一套<span class=\"gradient-text\">属于你</span>的<br>HTML 演讲系统\n      </h1>\n      <p class=\"lede\">从主题、版式到动效，全部由模板驱动。一行命令即可开场。</p>\n      <div class=\"row wrap mt-l\">\n        <span class=\"pill pill-accent\">24 themes</span>\n        <span class=\"pill\">30 layouts</span>\n        <span class=\"pill\">25 animations</span>\n        <span class=\"pill\">零构建</span>\n      </div>\n    </div>\n    <div class=\"deck-footer\"><span class=\"dim2\">lewis · 2026-04-15</span><span class=\"slide-number\" data-current=\"1\" data-total=\"1\"></span></div>\n    <div class=\"notes\">封面页口播：大家好，今天给大家带来一套开箱即用的 HTML 演讲系统。</div>\n  </section>"
+  },
+  {
+    "layoutId": "cta",
+    "name": "号召行动页",
+    "category": "closers",
+    "description": "行动号召页，大渐变标题 + 按钮",
+    "htmlSnippet": "<section class=\"slide center tc cta\">\n  <div style=\"max-width:900px\">\n    <p class=\"kicker\">Call to action</p>\n    <h1 class=\"h1 anim-rise-in\" style=\"font-size:96px\">\n      <span class=\"gradient-text\">动手做你的</span><br>第一份 html-ppt\n    </h1>\n    <p class=\"lede\" style=\"margin:16px auto 30px\">复制模板、换上你的内容、按 <b>T</b> 挑一个最对味的主题，讲完还能一键导出 PNG。</p>\n    <div class=\"row\" style=\"justify-content:center\">\n      <a class=\"btn\" href=\"#\">🚀 ./new-deck.sh my-talk</a>\n      <a class=\"btn outline\" href=\"#\">查看 SKILL.md</a>\n    </div>\n    <p class=\"dim mt-l\" style=\"font-size:14px\">键盘： ← → 翻页 · T 主题 · A 动效 · F 全屏 · O 概览 · S 备注</p>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "diff",
+    "name": "代码差异对比",
+    "category": "code",
+    "description": "手工 +/- 差异视图",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Before / After</p>\n  <h2 class=\"h2\">一次迁移到 tokens 后</h2>\n  <div class=\"card diff mt-l\" style=\"padding:0\">\n    <div class=\"hd\">assets/components/card.css</div>\n    <span class=\"ln ctx\">.card {</span>\n    <span class=\"ln del\">-  background: #ffffff;</span>\n    <span class=\"ln del\">-  color: #0c0d10;</span>\n    <span class=\"ln del\">-  border-radius: 18px;</span>\n    <span class=\"ln del\">-  box-shadow: 0 10px 30px rgba(18,24,40,.08);</span>\n    <span class=\"ln add\">+  background: var(--surface);</span>\n    <span class=\"ln add\">+  color: var(--text-1);</span>\n    <span class=\"ln add\">+  border-radius: var(--radius);</span>\n    <span class=\"ln add\">+  box-shadow: var(--shadow);</span>\n    <span class=\"ln ctx\">}</span>\n  </div>\n  <p class=\"dim mt-m\">24 个主题从此只需改 variables——其他 0 改动。</p>\n</section>"
+  },
+  {
+    "layoutId": "flow-diagram",
+    "name": "流程图",
+    "category": "plans",
+    "description": "5 节点流水线，带箭头和一个高亮节点",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Pipeline · 渲染管线</p>\n  <h2 class=\"h2\">从 Markdown 到 PNG，共 5 步</h2>\n  <div class=\"flow anim-stagger-list\" data-anim-target>\n    <div class=\"node\"><div class=\"ic\">📝</div><h4>Markdown</h4><p>你的内容源</p></div>\n    <div class=\"arr\">→</div>\n    <div class=\"node\"><div class=\"ic\">🧩</div><h4>Layouts</h4><p>选择页型</p></div>\n    <div class=\"arr\">→</div>\n    <div class=\"node hl\"><div class=\"ic\">🎨</div><h4>Theme</h4><p>换装</p></div>\n    <div class=\"arr\">→</div>\n    <div class=\"node\"><div class=\"ic\">🌐</div><h4>HTML</h4><p>运行时接管</p></div>\n    <div class=\"arr\">→</div>\n    <div class=\"node\"><div class=\"ic\">📸</div><h4>PNG</h4><p>headless Chrome</p></div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "gantt",
+    "name": "甘特图",
+    "category": "plans",
+    "description": "12 周甘特图，5 条并行轨道",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Plan · Q2 甘特图</p>\n  <h2 class=\"h2\">四个月，五条线并行</h2>\n  <div class=\"gantt\">\n    <div class=\"hd\"><div>任务</div><div>W1</div><div>W2</div><div>W3</div><div>W4</div><div>W5</div><div>W6</div><div>W7</div><div>W8</div><div>W9</div><div>W10</div><div>W11</div><div>W12</div></div>\n    <div class=\"row\"><div class=\"lbl\">主题系统 (tokens)</div><div class=\"cells\"><div class=\"bar\" style=\"left:0;width:25%\">tokens + 24 themes</div></div></div>\n    <div class=\"row\"><div class=\"lbl\">layouts 目录</div><div class=\"cells\"><div class=\"bar\" style=\"left:17%;width:33%\">30 个单页模板</div></div></div>\n    <div class=\"row\"><div class=\"lbl\">动画系统</div><div class=\"cells\"><div class=\"bar\" style=\"left:42%;width:25%\">25 个命名动效</div></div></div>\n    <div class=\"row\"><div class=\"lbl\">渲染 / CI</div><div class=\"cells\"><div class=\"bar\" style=\"left:58%;width:25%\">render.sh</div></div></div>\n    <div class=\"row\"><div class=\"lbl\">发布 & 文档</div><div class=\"cells\"><div class=\"bar\" style=\"left:75%;width:25%\">v1.0</div></div></div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "image-grid",
+    "name": "图片网格",
+    "category": "visuals",
+    "description": "7 宫格 bento 网格，渐变占位图",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Gallery · 作品集</p>\n  <h2 class=\"h2\">一次 bento grid，六张要点图</h2>\n  <div class=\"gg anim-stagger-list\" data-anim-target>\n    <div class=\"cell c1\"><span>主视觉 · Keynote 封面</span></div>\n    <div class=\"cell c2\"><span>暖色 · Stat</span></div>\n    <div class=\"cell c3\"><span>冷色 · Flow</span></div>\n    <div class=\"cell c4\"><span>日落 · Code</span></div>\n    <div class=\"cell c5\"><span>渐变 · Quote</span></div>\n    <div class=\"cell c6\"><span>暗色 · Terminal</span></div>\n    <div class=\"cell c7\"><span>极光 · CTA</span></div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "image-hero",
+    "name": "图片封面英雄",
+    "category": "visuals",
+    "description": "全出血英雄图，Ken Burns 渐变背景",
+    "htmlSnippet": "<section class=\"slide\" style=\"padding:56px\">\n  <div class=\"hero\">\n    <div class=\"bg kb\"></div>\n    <div class=\"overlay\"></div>\n    <div class=\"caption\">\n      <span class=\"pill\">Cover · 04</span>\n      <h1 class=\"mt-s anim-rise-in\">像杂志一样的<br>封面画面感</h1>\n      <p>Ken Burns 缓慢推拉 + 径向渐变 + 中灰叠加。无须真实图片，也能做出高级感。</p>\n    </div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "kpi-grid",
+    "name": "KPI 指标网格",
+    "category": "numbers",
+    "description": "4 个 KPI 一排，带涨跌标识",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Metrics · 关键数字</p>\n  <h2 class=\"h2\">这一季度，我们做到了什么</h2>\n  <div class=\"grid g4 mt-l anim-stagger-list\" data-anim-target>\n    <div class=\"card\"><p class=\"eyebrow\">Revenue</p><div style=\"font-size:56px;font-weight:800\"><span class=\"counter\" data-to=\"1248\">0</span>K</div><p class=\"dim\" style=\"color:var(--good)\">↑ 38% YoY</p></div>\n    <div class=\"card\"><p class=\"eyebrow\">Active users</p><div style=\"font-size:56px;font-weight:800\"><span class=\"counter\" data-to=\"82\">0</span>K</div><p class=\"dim\" style=\"color:var(--good)\">↑ 12% QoQ</p></div>\n    <div class=\"card\"><p class=\"eyebrow\">Retention</p><div style=\"font-size:56px;font-weight:800\"><span class=\"counter\" data-to=\"74\">0</span>%</div><p class=\"dim\" style=\"color:var(--good)\">↑ 3 pts</p></div>\n    <div class=\"card\"><p class=\"eyebrow\">NPS</p><div style=\"font-size:56px;font-weight:800\"><span class=\"counter\" data-to=\"61\">0</span></div><p class=\"dim\" style=\"color:var(--warn)\">→ 持平</p></div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "mindmap",
+    "name": "思维导图",
+    "category": "plans",
+    "description": "径向思维导图，含 SVG 路径绘制动画",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Concept map · 心智图</p>\n  <h2 class=\"h2\">html-ppt 的知识地图</h2>\n  <div class=\"mm\">\n    <svg class=\"anim-path-draw\" viewBox=\"0 0 1200 520\" preserveAspectRatio=\"none\">\n      <path d=\"M600,260 C400,140 280,100 160,90\"/>\n      <path d=\"M600,260 C400,380 280,420 160,430\"/>\n      <path d=\"M600,260 C800,140 920,100 1040,90\"/>\n      <path d=\"M600,260 C800,380 920,420 1040,430\"/>\n      <path d=\"M600,260 C600,140 600,100 600,60\"/>\n      <path d=\"M600,260 C600,380 600,420 600,460\"/>\n    </svg>\n    <div class=\"n root\">html-ppt</div>\n    <div class=\"n\" style=\"top:60px;left:40px\">Themes</div>\n    <div class=\"n sm\" style=\"top:410px;left:40px\">Layouts</div>\n    <div class=\"n sm\" style=\"top:60px;right:40px\">Animations</div>\n    <div class=\"n sm\" style=\"top:410px;right:40px\">Runtime</div>\n    <div class=\"n sm\" style=\"top:30px;left:calc(50% - 50px)\">Tokens</div>\n    <div class=\"n sm\" style=\"top:450px;left:calc(50% - 60px)\">Render.sh</div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "process-steps",
+    "name": "流程步骤",
+    "category": "plans",
+    "description": "4 个编号步骤卡片",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">How-to · 四步做一个 deck</p>\n  <h2 class=\"h2\">从零到一，只需要十分钟</h2>\n  <div class=\"steps anim-stagger-list\" data-anim-target>\n    <div class=\"step\"><div class=\"num\">1</div><h4>起稿</h4><p>运行 <code>new-deck.sh</code> 创建脚手架，默认 6 页。</p><span class=\"tag\">~30s</span></div>\n    <div class=\"step\"><div class=\"num\">2</div><h4>选版式</h4><p>从 <code>templates/single-page/</code> 里复制你需要的页型。</p><span class=\"tag\">~2min</span></div>\n    <div class=\"step\"><div class=\"num\">3</div><h4>写内容</h4><p>替换 demo 数据，保留结构。</p><span class=\"tag\">~6min</span></div>\n    <div class=\"step\"><div class=\"num\">4</div><h4>换主题</h4><p>按 <b>T</b> 循环看 24 个主题，挑一个定稿。</p><span class=\"tag\">~1min</span></div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "pros-cons",
+    "name": "优缺点对比",
+    "category": "text-centric",
+    "description": "好处与痛点双卡片布局",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Trade-offs · 诚实的取舍</p>\n  <h2 class=\"h2\">纯 HTML 演讲：好在哪里，痛在哪里</h2>\n  <div class=\"pc\">\n    <div class=\"card pro anim-fade-up\"><h3><span class=\"b\">✓</span> 好处</h3>\n      <ul><li>零构建：一个文件就能跑</li><li>可 diff：Git 友好，好 review</li><li>可编程：动效自由定制</li><li>可分发：URL / PDF / PNG 都行</li></ul>\n    </div>\n    <div class=\"card con anim-fade-up\"><h3><span class=\"b\">✗</span> 痛点</h3>\n      <ul><li>协作不像 Keynote 那样实时</li><li>非程序员上手稍陡</li><li>复杂动效仍需写 JS</li><li>部分字体在离线环境缺失</li></ul>\n    </div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "roadmap",
+    "name": "路线图",
+    "category": "plans",
+    "description": "4 列 NOW / NEXT / LATER / VISION",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Roadmap · 2026</p>\n  <h2 class=\"h2\">接下来四个季度，我们会做什么</h2>\n  <div class=\"rm\">\n    <div class=\"col now\">\n      <span class=\"tag\">NOW · Q2</span>\n      <h4>主题系统</h4>\n      <ul><li>24 个官方主题</li><li>tokens 语义文档</li><li>T 键循环切换</li></ul>\n    </div>\n    <div class=\"col\">\n      <span class=\"tag\">NEXT · Q3</span>\n      <h4>导出</h4>\n      <ul><li>PNG 批量</li><li>PDF 打包</li><li>小红书 3:4 切片</li></ul>\n    </div>\n    <div class=\"col\">\n      <span class=\"tag\">LATER · Q4</span>\n      <h4>交互</h4>\n      <ul><li>Presenter 模式</li><li>Notes 同屏</li><li>遥控器配对</li></ul>\n    </div>\n    <div class=\"col\">\n      <span class=\"tag\">VISION</span>\n      <h4>AI 写稿</h4>\n      <ul><li>从 md 自动分页</li><li>智能选版式</li><li>智能选主题</li></ul>\n    </div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "section-divider",
+    "name": "章节分隔页",
+    "category": "opener",
+    "description": "大编号章节分隔页（02 · Theme）",
+    "htmlSnippet": "<section class=\"slide tc center\">\n  <div style=\"max-width:780px;margin:0 auto\">\n    <p class=\"kicker anim-fade-down\">Section · 02</p>\n    <h1 class=\"h1 anim-rise-in\" style=\"font-size:112px\">主题与 <span class=\"gradient-text\">Tokens</span></h1>\n    <div class=\"divider-accent\" style=\"margin:24px auto\"></div>\n    <p class=\"lede\" style=\"margin:0 auto\">换主题 = 换一份 CSS 变量。其他一切保持不变。</p>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "stat-highlight",
+    "name": "重点数据",
+    "category": "numbers",
+    "description": "单个巨大数字 + 副标题（含 counter 动画）",
+    "htmlSnippet": "<section class=\"slide center tc\">\n  <p class=\"kicker\">Impact · 一个数字</p>\n  <div style=\"font-size:260px;line-height:1;font-weight:900;letter-spacing:-.05em\">\n    <span class=\"counter gradient-text\" data-to=\"92\">0</span><span class=\"gradient-text\">%</span>\n  </div>\n  <h3 class=\"mt-s\">的准备时间被你省下</h3>\n  <p class=\"lede\" style=\"margin:16px auto 0\">在 10 个真实项目中，使用 html-ppt 的平均 deck 制作时间从 4 小时降到了 20 分钟。</p>\n</section>"
+  },
+  {
+    "layoutId": "table",
+    "name": "数据表格",
+    "category": "numbers",
+    "description": "数据表格，行悬停高亮，数字右对齐",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Comparison · 数据表</p>\n  <h2 class=\"h2\">主流 HTML 演讲框架对比</h2>\n  <div class=\"card mt-l\" style=\"padding:4px 12px\">\n  <table class=\"t\">\n    <thead><tr><th>框架</th><th>学习曲线</th><th>自定义</th><th class=\"num\">体积</th><th class=\"num\">GitHub ⭐</th><th>适合</th></tr></thead>\n    <tbody>\n      <tr><td><b>html-ppt</b></td><td>极低</td><td>★★★★★</td><td class=\"num\">~80 KB</td><td class=\"num\">—</td><td>快速出稿、换主题</td></tr>\n      <tr><td>reveal.js</td><td>低</td><td>★★★★</td><td class=\"num\">~450 KB</td><td class=\"num\">67k</td><td>长讲座、互动</td></tr>\n      <tr><td>Slidev</td><td>中</td><td>★★★★★</td><td class=\"num\">需构建</td><td class=\"num\">31k</td><td>开发者、技术分享</td></tr>\n      <tr><td>Marp</td><td>极低</td><td>★★</td><td class=\"num\">~10 MB</td><td class=\"num\">13k</td><td>Markdown 出稿</td></tr>\n      <tr><td>Impress.js</td><td>中</td><td>★★★</td><td class=\"num\">~60 KB</td><td class=\"num\">38k</td><td>3D 展示</td></tr>\n    </tbody>\n  </table>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "terminal",
+    "name": "终端窗口",
+    "category": "code",
+    "description": "终端窗口模拟，含交通灯头部",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">CLI · 一行命令起一个 deck</p>\n  <h2 class=\"h2\" style=\"color:var(--text-1)\">你需要的就是一个终端</h2>\n  <div class=\"term mt-l\">\n    <div class=\"bar\"><span></span><span></span><span></span></div>\n    <div><span class=\"p\">$ </span><span class=\"c\">./scripts/new-deck.sh graphify-talk</span></div>\n    <div class=\"o\">  ✔ created decks/graphify-talk/index.html</div>\n    <div class=\"o\">  ✔ linked theme → aurora</div>\n    <div class=\"o\">  ✔ 12 slides scaffolded from templates/single-page/*</div>\n    <div style=\"margin-top:12px\"><span class=\"p\">$ </span><span class=\"c\">open decks/graphify-talk/index.html</span></div>\n    <div class=\"o\">  ↗ launched in Chrome</div>\n    <div style=\"margin-top:12px\"><span class=\"p\">$ </span><span class=\"c\">./scripts/render.sh decks/graphify-talk/index.html</span></div>\n    <div class=\"o\">  ✔ wrote graphify-talk.png (1920×1080)</div>\n    <div style=\"margin-top:12px\"><span class=\"p\">$ </span><span class=\"caret\"></span></div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "thanks",
+    "name": "致谢页",
+    "category": "closers",
+    "description": "最终致谢页，含 confetti 动画",
+    "htmlSnippet": "<section class=\"slide center tc\">\n  <div>\n    <div class=\"anim-confetti-burst\" style=\"display:inline-block;padding:40px\"></div>\n    <h1 class=\"h1 anim-fade-up\" style=\"font-size:180px;line-height:1\"><span class=\"gradient-text\">Thanks</span></h1>\n    <p class=\"lede\" style=\"margin:18px auto 0\">愿你每一次上台，都少一点紧张，多一点从容。</p>\n    <div class=\"row mt-l\" style=\"justify-content:center;gap:32px\">\n      <div class=\"dim\"><b>lewis</b> · sudolewis@gmail.com</div>\n      <div class=\"dim\">github.com/lewis/html-ppt</div>\n      <div class=\"dim\">2026 · MIT</div>\n    </div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "three-column",
+    "name": "三栏布局",
+    "category": "text-centric",
+    "description": "三根等宽支柱，带图标",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Pillars · 三根支柱</p>\n  <h2 class=\"h2\">一个 html-ppt，三件装备</h2>\n  <div class=\"grid g3 mt-l anim-stagger-list\" data-anim-target>\n    <div class=\"card\"><div style=\"font-size:40px\">🎨</div><h4 class=\"mt-s\">Themes</h4><p class=\"dim\">克制 · 编辑 · 霓虹 · 终端 …… 随场景换装。</p></div>\n    <div class=\"card\"><div style=\"font-size:40px\">🧱</div><h4 class=\"mt-s\">Layouts</h4><p class=\"dim\">30 种页型，从封面到结语一次给齐。</p></div>\n    <div class=\"card\"><div style=\"font-size:40px\">✨</div><h4 class=\"mt-s\">Animations</h4><p class=\"dim\">25 个命名动效，每一个都克制、每一个都上台。</p></div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "timeline",
+    "name": "时间线",
+    "category": "plans",
+    "description": "5 点水平时间线，带圆点",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Roadmap · 时间线</p>\n  <h2 class=\"h2\">html-ppt 是怎么长大的</h2>\n  <div class=\"tl\">\n    <div class=\"row anim-stagger-list\" data-anim-target>\n      <div class=\"item\"><div class=\"year\">2025 Q3</div><div class=\"dot\"></div><h4>起源</h4><p>一套个人 reveal.js 模板</p></div>\n      <div class=\"item\"><div class=\"year\">2025 Q4</div><div class=\"dot\"></div><h4>tokens 化</h4><p>把颜色全部收进 :root</p></div>\n      <div class=\"item\"><div class=\"year\">2026 Q1</div><div class=\"dot\"></div><h4>Agent 接入</h4><p>开放为 AgentSkill</p></div>\n      <div class=\"item\"><div class=\"year\">2026 Q2</div><div class=\"dot\"></div><h4>24 themes</h4><p>从克制到霓虹一应俱全</p></div>\n      <div class=\"item\"><div class=\"year\">2026 Q3</div><div class=\"dot\"></div><h4>渲染管线</h4><p>headless Chrome PNG 出稿</p></div>\n    </div>\n  </div>\n</section>"
+  },
+  {
+    "layoutId": "toc",
+    "name": "目录页",
+    "category": "opener",
+    "description": "目录页，2×3 编号卡片网格",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"eyebrow\">Contents · 目录</p>\n  <h2 class=\"h2\">今天的五件事</h2>\n  <div class=\"grid g2 mt-l anim-stagger-list\" data-anim-target>\n    <div class=\"card\"><div class=\"row\"><div class=\"h3 dim2\" style=\"width:56px\">01</div><div><h4>为什么需要设计系统</h4><p class=\"dim\">从模板到 token，减少重复。</p></div></div></div>\n    <div class=\"card\"><div class=\"row\"><div class=\"h3 dim2\" style=\"width:56px\">02</div><div><h4>主题与 tokens</h4><p class=\"dim\">24 个可切换的主题，一键换装。</p></div></div></div>\n    <div class=\"card\"><div class=\"row\"><div class=\"h3 dim2\" style=\"width:56px\">03</div><div><h4>版式目录</h4><p class=\"dim\">30 种单页类型，覆盖 95% 场景。</p></div></div></div>\n    <div class=\"card\"><div class=\"row\"><div class=\"h3 dim2\" style=\"width:56px\">04</div><div><h4>入场动效</h4><p class=\"dim\">25 种命名动画，可挑可组合。</p></div></div></div>\n    <div class=\"card\" style=\"grid-column:span 2\"><div class=\"row\"><div class=\"h3 dim2\" style=\"width:56px\">05</div><div><h4>现场演示 &amp; 问答</h4><p class=\"dim\">打开模板就能讲。</p></div></div></div>\n  </div>\n  <div class=\"deck-footer\"><span class=\"dim2\">html-ppt</span><span>目录</span></div>\n</section>"
+  },
+  {
+    "layoutId": "todo-checklist",
+    "name": "待办清单",
+    "category": "plans",
+    "description": "勾选/未勾选状态的检查清单",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Launch · 上线前检查清单</p>\n  <h2 class=\"h2\">发版前必过的 8 件事</h2>\n  <ul class=\"todo anim-stagger-list\" data-anim-target>\n    <li class=\"done\"><span class=\"b\"></span><span class=\"t\">所有 slide 在 Chrome 打开无控制台报错</span><span class=\"tag\">#sanity</span></li>\n    <li class=\"done\"><span class=\"b\"></span><span class=\"t\">字体回退链路正确（Noto Sans SC）</span><span class=\"tag\">#fonts</span></li>\n    <li class=\"done\"><span class=\"b\"></span><span class=\"t\">24 个主题各选一页截图比对</span><span class=\"tag\">#themes</span></li>\n    <li class=\"done\"><span class=\"b\"></span><span class=\"t\">键盘导航全键通</span><span class=\"tag\">#runtime</span></li>\n    <li><span class=\"b\"></span><span class=\"t\">PDF 打印不跨页裁切</span><span class=\"tag\">#print</span></li>\n    <li><span class=\"b\"></span><span class=\"t\">render.sh 对每个 showcase 跑通</span><span class=\"tag\">#ci</span></li>\n    <li><span class=\"b\"></span><span class=\"t\">references/*.md 通读一遍</span><span class=\"tag\">#docs</span></li>\n    <li><span class=\"b\"></span><span class=\"t\">LICENSE / README 作者信息核对</span><span class=\"tag\">#legal</span></li>\n  </ul>\n</section>"
+  },
+  {
+    "layoutId": "two-column",
+    "name": "双栏布局",
+    "category": "text-centric",
+    "description": "概念 + 示例左右并排",
+    "htmlSnippet": "<section class=\"slide\">\n  <p class=\"kicker\">Pattern · 双栏</p>\n  <h2 class=\"h2\">概念 <span class=\"dim2\">⟷</span> 示例</h2>\n  <div class=\"grid g2 mt-l\" style=\"align-items:start\">\n    <div class=\"card anim-fade-left\">\n      <h3>左栏 · 概念</h3>\n      <p class=\"dim\">一个主题 = 一组 CSS 变量。把颜色、字体、圆角、阴影全部收到 <code>:root</code> 里。</p>\n      <ul class=\"mt-m\">\n        <li>— tokens 定义语义，不写具体色值</li>\n        <li>— base.css 用 tokens 排版</li>\n        <li>— 每个主题只改变量</li>\n      </ul>\n    </div>\n    <div class=\"card anim-fade-right\">\n      <h3>右栏 · 示例</h3>\n<pre class=\"mono\" style=\"font-size:13px;background:var(--surface-2);padding:14px;border-radius:var(--radius-sm);overflow:auto\">\n:root {\n  --bg: #fff;\n  --text-1: #0c0d10;\n  --accent: #3b6cff;\n  --radius: 18px;\n}\n.card {\n  background: var(--bg);\n  color: var(--text-1);\n  border-radius: var(--radius);\n}</pre>\n    </div>\n  </div>\n</section>"
+  }
+]

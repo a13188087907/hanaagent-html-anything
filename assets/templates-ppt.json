@@ -1,0 +1,692 @@
+[
+  {
+    "id": "ppt-xhs-white-editorial",
+    "zhName": "白底杂志风",
+    "enName": "White Editorial",
+    "emoji": "📰",
+    "description": "纯白底 + 10 色彩虹渐变条 + 80-110px display 大字标题 + 紫→蓝→绿→橙→粉渐变文字 + 马卡龙软卡片 + 引用框",
+    "category": "slides",
+    "sourceDeck": "xhs-white-editorial",
+    "defaultTheme": "xiaohongshu-white",
+    "availableThemes": [
+      "xiaohongshu-white",
+      "minimal-white",
+      "editorial-serif",
+      "rainbow-gradient",
+      "soft-pastel"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "quote",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "小红书",
+      "白底",
+      "杂志风",
+      "插画风",
+      "图文"
+    ]
+  },
+  {
+    "id": "ppt-graphify-dark-graph",
+    "zhName": "暗底知识图谱",
+    "enName": "Dark Knowledge Graph",
+    "emoji": "🌌",
+    "description": "深蓝夜景渐变 #06060c→#0e1020 + 力导向图覆盖 + 彩虹渐变标题 + 玻璃态卡片 + Sci-Fi 温暖调性",
+    "category": "slides",
+    "sourceDeck": "graphify-dark-graph",
+    "defaultTheme": "catppuccin-mocha",
+    "availableThemes": [
+      "catppuccin-mocha",
+      "dracula",
+      "cyberpunk-neon",
+      "aurora",
+      "tokyo-night"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "chart-bar",
+      "code",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "知识图谱",
+      "暗色",
+      "数据分析",
+      "数据可视化",
+      "Sci-Fi"
+    ]
+  },
+  {
+    "id": "ppt-knowledge-arch-blueprint",
+    "zhName": "奶油蓝图架构",
+    "enName": "Blueprint Architecture",
+    "emoji": "📐",
+    "description": "奶油纸底 #F0EAE0 + 蓝图网格 + 锈红 accent #B5392A + 硬 2px 黑边卡片 + pipeline 步骤图 + Playfair 衬线大数字",
+    "category": "slides",
+    "sourceDeck": "knowledge-arch-blueprint",
+    "defaultTheme": "engineering-whiteprint",
+    "availableThemes": [
+      "engineering-whiteprint",
+      "editorial-serif",
+      "academic-paper",
+      "japanese-minimal",
+      "corporate-clean"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "chart-bar",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "架构图",
+      "蓝图",
+      "系统设计",
+      "工程",
+      "白皮书"
+    ]
+  },
+  {
+    "id": "ppt-hermes-cyber-terminal",
+    "zhName": "暗终端诚实评测",
+    "enName": "Cyber Terminal",
+    "emoji": "💻",
+    "description": "纯黑底 #0a0c10 + 54px 赛博网格 + CRT 扫描线 + 命令行 $ prompt + 薄荷绿 glow + 暗色代码框 + 极客评测风",
+    "category": "slides",
+    "sourceDeck": "hermes-cyber-terminal",
+    "defaultTheme": "terminal-green",
+    "availableThemes": [
+      "terminal-green",
+      "cyberpunk-neon",
+      "dracula",
+      "catppuccin-mocha",
+      "retro-tv"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "code",
+      "chart-bar",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "终端",
+      "CLI",
+      "评测",
+      "极客",
+      "Agent"
+    ]
+  },
+  {
+    "id": "ppt-obsidian-claude-gradient",
+    "zhName": "GitHub 暗紫渐变",
+    "enName": "GitHub Purple Gradient",
+    "emoji": "💜",
+    "description": "GitHub 暗色 #0d1117 + 紫蓝径向光晕 + 60px 网格 + 居中排版 + 三色渐变文字 + GitHub 代码调色板 + 开发教程风",
+    "category": "slides",
+    "sourceDeck": "obsidian-claude-gradient",
+    "defaultTheme": "tokyo-night",
+    "availableThemes": [
+      "tokyo-night",
+      "catppuccin-mocha",
+      "dracula",
+      "nord",
+      "gruvbox-dark",
+      "rose-pine"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "code",
+      "kpi-grid",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "开发者",
+      "GitHub",
+      "紫渐变",
+      "MCP",
+      "Agent",
+      "教程"
+    ]
+  },
+  {
+    "id": "ppt-testing-safety-alert",
+    "zhName": "红琥珀警示",
+    "enName": "Safety Alert",
+    "emoji": "⚠️",
+    "description": "红黑 45° 警示条纹 + 红色否定式大标题 + 绿/琥珀/红三级风险卡片 + 审计 checklist + 政策代码块",
+    "category": "slides",
+    "sourceDeck": "testing-safety-alert",
+    "defaultTheme": "news-broadcast",
+    "availableThemes": [
+      "news-broadcast",
+      "sharp-mono",
+      "neo-brutalism",
+      "terminal-green",
+      "cyberpunk-neon"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "chart-bar",
+      "code",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "安全",
+      "风险",
+      "审计",
+      "告警",
+      "红队",
+      "AI 安全"
+    ]
+  },
+  {
+    "id": "ppt-xhs-pastel-card",
+    "zhName": "柔和马卡龙慢生活",
+    "enName": "Pastel Card",
+    "emoji": "🍰",
+    "description": "奶油底 #fef8f1 + 三色模糊光晕 + Playfair 衬线斜体展示标题 + 28px 圆角马卡龙色卡片 + SVG 环形图",
+    "category": "slides",
+    "sourceDeck": "xhs-pastel-card",
+    "defaultTheme": "soft-pastel",
+    "availableThemes": [
+      "soft-pastel",
+      "xiaohongshu-white",
+      "editorial-serif",
+      "memphis-pop",
+      "midcentury"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "quote",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "马卡龙",
+      "慢生活",
+      "生活方式",
+      "小红书",
+      "柔和"
+    ]
+  },
+  {
+    "id": "ppt-dir-key-nav-minimal",
+    "zhName": "方向键 8 色极简",
+    "enName": "Arrow Key Minimal",
+    "emoji": "➡️",
+    "description": "8 页独立单色背景（靛蓝/奶油/深红/翡翠/石板/紫罗兰/白/炭灰）+ 160px 超大标题 + 4px 短 accent 线 + 巨大留白",
+    "category": "slides",
+    "sourceDeck": "dir-key-nav-minimal",
+    "defaultTheme": "minimal-white",
+    "availableThemes": [
+      "minimal-white",
+      "sharp-mono",
+      "swiss-grid",
+      "bauhaus",
+      "japanese-minimal",
+      "editorial-serif"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "quote",
+      "thanks"
+    ],
+    "tags": [
+      "极简",
+      "演讲",
+      "每页一色",
+      "留白",
+      "keynote"
+    ]
+  },
+  {
+    "id": "ppt-pitch-deck",
+    "zhName": "投资人 Pitch Deck",
+    "enName": "Pitch Deck",
+    "emoji": "🚀",
+    "description": "10 页融资 deck + 白底蓝紫渐变 hero + 大数字 + traction 图表 + YC/VC 风格",
+    "category": "slides",
+    "sourceDeck": "pitch-deck",
+    "defaultTheme": "pitch-deck-vc",
+    "availableThemes": [
+      "pitch-deck-vc",
+      "corporate-clean",
+      "minimal-white",
+      "neo-brutalism",
+      "swiss-grid"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "chart-bar",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "pitch",
+      "融资",
+      "投资人",
+      "路演",
+      "VC",
+      "创业"
+    ]
+  },
+  {
+    "id": "ppt-product-launch",
+    "zhName": "产品发布",
+    "enName": "Product Launch",
+    "emoji": "🎉",
+    "description": "8 页 + 暗色 hero + 暖橙渐变内容区 + 功能特性卡片 + 定价层级 + CTA 按钮 + 启动 keynote",
+    "category": "slides",
+    "sourceDeck": "product-launch",
+    "defaultTheme": "glassmorphism",
+    "availableThemes": [
+      "glassmorphism",
+      "neo-brutalism",
+      "magazine-bold",
+      "sunset-warm",
+      "memphis-pop",
+      "corporate-clean"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "chart-bar",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "产品发布",
+      "launch",
+      "定价",
+      "功能展示",
+      "发布会"
+    ]
+  },
+  {
+    "id": "ppt-tech-sharing",
+    "zhName": "技术分享",
+    "enName": "Tech Sharing",
+    "emoji": "🧑‍💻",
+    "description": "8 页 + GitHub 暗色 + JetBrains Mono 等宽字 + 终端代码块 + agenda + Q&A 页",
+    "category": "slides",
+    "sourceDeck": "tech-sharing",
+    "defaultTheme": "tokyo-night",
+    "availableThemes": [
+      "tokyo-night",
+      "catppuccin-mocha",
+      "dracula",
+      "gruvbox-dark",
+      "nord"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "code",
+      "kpi-grid",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "技术分享",
+      "代码",
+      "演讲",
+      "开发者",
+      "内部分享"
+    ]
+  },
+  {
+    "id": "ppt-weekly-report",
+    "zhName": "周报",
+    "enName": "Weekly Report",
+    "emoji": "📊",
+    "description": "7 页 + 企业清晰风 + 8 格 KPI 面板 + shipped 清单 + 8 周柱状图 + 下周计划表",
+    "category": "slides",
+    "sourceDeck": "weekly-report",
+    "defaultTheme": "corporate-clean",
+    "availableThemes": [
+      "corporate-clean",
+      "minimal-white",
+      "arctic-cool",
+      "engineering-whiteprint",
+      "editorial-serif"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "kpi-grid",
+      "chart-bar",
+      "bullets",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "周报",
+      "KPI",
+      "报告",
+      "管理",
+      "团队"
+    ]
+  },
+  {
+    "id": "ppt-xhs-post",
+    "zhName": "小红书图文",
+    "enName": "XHS Post",
+    "emoji": "📱",
+    "description": "9 页 + 3:4 竖版 810×1080 + 温暖马卡龙底色 + 虚线贴纸卡片 + 底部圆点翻页指示",
+    "category": "slides",
+    "sourceDeck": "xhs-post",
+    "defaultTheme": "xiaohongshu-white",
+    "availableThemes": [
+      "xiaohongshu-white",
+      "soft-pastel",
+      "editorial-serif",
+      "minimal-white"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "quote",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "小红书",
+      "图文",
+      "竖屏",
+      "3:4",
+      "Instagram"
+    ]
+  },
+  {
+    "id": "ppt-course-module",
+    "zhName": "教学模块",
+    "enName": "Course Module",
+    "emoji": "📚",
+    "description": "7 页 + 暖纸色 + Playfair 衬线 + 左侧固定学习目标侧栏 + MCQ 自测 + 课程友好",
+    "category": "slides",
+    "sourceDeck": "course-module",
+    "defaultTheme": "editorial-serif",
+    "availableThemes": [
+      "editorial-serif",
+      "academic-paper",
+      "japanese-minimal",
+      "solarized-light",
+      "magazine-bold"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "quote",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "教学",
+      "课程",
+      "学习",
+      "工作坊",
+      "培训"
+    ]
+  },
+  {
+    "id": "ppt-presenter-mode-reveal",
+    "zhName": "演讲者模式",
+    "enName": "Presenter Mode",
+    "emoji": "🎤",
+    "description": "6 页演讲者模式专用 + tokyo-night 默认 + 5 主题 T 键切换 + 每页 150-300 字逐字稿示例 + 按 S 看 notes",
+    "category": "slides",
+    "sourceDeck": "presenter-mode-reveal",
+    "defaultTheme": "tokyo-night",
+    "availableThemes": [
+      "tokyo-night",
+      "catppuccin-mocha",
+      "dracula",
+      "nord",
+      "minimal-white",
+      "catppuccin-latte"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "code",
+      "quote",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "演讲者",
+      "逐字稿",
+      "notes",
+      "presenter",
+      "演讲"
+    ]
+  },
+  {
+    "id": "ppt-guizang-editorial",
+    "zhName": "贵赞编辑墨水",
+    "enName": "Guizang Editorial",
+    "emoji": "🖋️",
+    "description": "电子杂志 × 电子墨水; 10 个版面 + 5 套调色板 (墨水/靛蓝瓷/森林墨/牛皮纸/沙丘)",
+    "category": "slides",
+    "sourceDeck": "guizang-editorial",
+    "defaultTheme": "editorial-serif",
+    "availableThemes": [
+      "editorial-serif",
+      "xiaohongshu-white",
+      "magazine-bold",
+      "japanese-minimal",
+      "retro-tv"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "section-divider",
+      "bullets",
+      "kpi-grid",
+      "big-quote",
+      "stat-highlight",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "editorial",
+      "e-ink",
+      "magazine",
+      "narrative",
+      "guizang"
+    ]
+  },
+  {
+    "id": "ppt-magazine-web",
+    "zhName": "杂志风网页",
+    "enName": "Magazine Web",
+    "emoji": "📰",
+    "description": "电子杂志 × 电子墨水风, WebGL 流体背景 + 衬线 display",
+    "category": "slides",
+    "sourceDeck": "magazine-web",
+    "defaultTheme": "magazine-bold",
+    "availableThemes": [
+      "magazine-bold",
+      "editorial-serif",
+      "soft-pastel",
+      "xiaohongshu-white",
+      "midcentury"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "section-divider",
+      "bullets",
+      "big-quote",
+      "three-column",
+      "stat-highlight",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "magazine",
+      "editorial",
+      "e-ink",
+      "horizontal swipe"
+    ]
+  },
+  {
+    "id": "ppt-open-slide-canvas",
+    "zhName": "1920 画布自由",
+    "enName": "Open-Slide 1920 Canvas",
+    "emoji": "🎨",
+    "description": "锁死 1920×1080 画布, React 组件级自由组合, 不绑模板",
+    "category": "slides",
+    "sourceDeck": "open-slide-canvas",
+    "defaultTheme": "minimal-white",
+    "availableThemes": [
+      "minimal-white",
+      "sharp-mono",
+      "swiss-grid",
+      "neo-brutalism",
+      "bauhaus",
+      "corporate-clean"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "section-divider",
+      "bullets",
+      "kpi-grid",
+      "comparison",
+      "two-column",
+      "big-quote",
+      "thanks"
+    ],
+    "tags": [
+      "canvas",
+      "open-slide",
+      "freeform",
+      "1920",
+      "react"
+    ]
+  },
+  {
+    "id": "ppt-replit",
+    "zhName": "Replit Slides 风",
+    "enName": "Replit Slides",
+    "emoji": "🟣",
+    "description": "Replit Slides 八套主题 (helix/holm/vance/bevel/world/atlas/bluehouse)",
+    "category": "slides",
+    "sourceDeck": "replit",
+    "defaultTheme": "soft-pastel",
+    "availableThemes": [
+      "soft-pastel",
+      "minimal-white",
+      "neo-brutalism",
+      "memphis-pop",
+      "glassmorphism",
+      "corporate-clean"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "section-divider",
+      "bullets",
+      "kpi-grid",
+      "three-column",
+      "big-quote",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "replit",
+      "themed",
+      "memo"
+    ]
+  },
+  {
+    "id": "ppt-simple",
+    "zhName": "通用 Simple",
+    "enName": "Simple Deck",
+    "emoji": "▫️",
+    "description": "通用 horizontal-swipe HTML deck, 不要 magazine 调",
+    "category": "slides",
+    "sourceDeck": "simple",
+    "defaultTheme": "minimal-white",
+    "availableThemes": [
+      "minimal-white",
+      "sharp-mono",
+      "corporate-clean",
+      "swiss-grid",
+      "neo-brutalism"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "bullets",
+      "kpi-grid",
+      "two-column",
+      "three-column",
+      "stat-highlight",
+      "cta",
+      "thanks"
+    ],
+    "tags": [
+      "deck",
+      "simple",
+      "swipe"
+    ]
+  },
+  {
+    "id": "ppt-swiss-international",
+    "zhName": "瑞士国际主义",
+    "enName": "Swiss International",
+    "emoji": "🟦",
+    "description": "16 列网格 + 单一饱和 accent + 22 个锁死版面 (Klein Blue / Lemon / Mint / Safety Orange)",
+    "category": "slides",
+    "sourceDeck": "swiss-international",
+    "defaultTheme": "swiss-grid",
+    "availableThemes": [
+      "swiss-grid",
+      "sharp-mono",
+      "bauhaus",
+      "minimal-white",
+      "japanese-minimal",
+      "memphis-pop"
+    ],
+    "recommendedLayouts": [
+      "cover",
+      "section-divider",
+      "bullets",
+      "kpi-grid",
+      "three-column",
+      "comparison",
+      "stat-highlight",
+      "thanks"
+    ],
+    "tags": [
+      "swiss",
+      "grid",
+      "international",
+      "ikb",
+      "editorial",
+      "facts"
+    ]
+  }
+]

@@ -1,0 +1,1507 @@
+[
+  {
+    "id": "article-magazine",
+    "zhName": "杂志文章",
+    "enName": "Magazine Article",
+    "emoji": "📖",
+    "description": "Substack / Medium 高级感长文排版, 适合公众号、博客发布",
+    "category": "article",
+    "scenario": "marketing",
+    "aspectHint": "A4 / 长页面",
+    "featured": 11,
+    "recommended": 0,
+    "tags": [
+      "blog",
+      "essay",
+      "newsletter",
+      "公众号",
+      "博客",
+      "文章"
+    ],
+    "example": {
+      "id": "sample-article-trq212-html",
+      "name": "杂志文章 · HTML 取代 Markdown",
+      "format": "markdown",
+      "tagline": "灵感来自 @trq212 的推文",
+      "desc": "围绕「AI 时代 HTML > Markdown」的延伸评论, 含原推附注与可点击链接",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://x.com/trq212/status/2052809885763747935",
+        "label": "@trq212 / x.com"
+      }
+    }
+  },
+  {
+    "id": "blog-post",
+    "zhName": "博客长文",
+    "enName": "Blog Post",
+    "emoji": "📰",
+    "description": "杂志感长文, 含 masthead、hero、figures、pull quote、作者署名",
+    "category": "article",
+    "scenario": "marketing",
+    "aspectHint": "长页面",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "blog",
+      "essay",
+      "case study",
+      "长文"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "card-twitter",
+    "zhName": "Twitter 分享卡",
+    "enName": "Twitter Share Card",
+    "emoji": "🐦",
+    "description": "推特金句 / 数据卡, 适合配推文",
+    "category": "card",
+    "scenario": "marketing",
+    "aspectHint": "1600×900 (16:9)",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "twitter",
+      "x",
+      "quote",
+      "金句"
+    ],
+    "example": {
+      "id": "sample-twitter-quote",
+      "name": "推特卡 · 金句",
+      "format": "text",
+      "tagline": "16:9 暗色金句卡, 截图直接配推文",
+      "desc": "高对比金句模板, 含 grid 网格 + 渐变光晕背景",
+      "hasHtml": true,
+      "hasMd": true
+    }
+  },
+  {
+    "id": "card-xiaohongshu",
+    "zhName": "小红书图文卡片",
+    "enName": "Xiaohongshu Card",
+    "emoji": "📱",
+    "description": "小红书风格知识卡片, 多张联排可滑动浏览",
+    "category": "card",
+    "scenario": "marketing",
+    "aspectHint": "1080×1440 (3:4)",
+    "featured": 24,
+    "recommended": 0,
+    "tags": [
+      "xhs",
+      "小红书",
+      "carousel",
+      "图文"
+    ],
+    "example": {
+      "id": "sample-xhs-ai-habits",
+      "name": "小红书图文卡 · AI 工具习惯",
+      "format": "markdown",
+      "tagline": "7 张连排, 莫兰迪渐变",
+      "desc": "干货卡片合集, 适合截图发小红书 / 朋友圈",
+      "hasHtml": true,
+      "hasMd": true
+    }
+  },
+  {
+    "id": "dashboard",
+    "zhName": "管理后台仪表板",
+    "enName": "Admin Dashboard",
+    "emoji": "🎛️",
+    "description": "固定侧栏 + 顶栏 + KPI 网格 + 1-2 张图",
+    "category": "dashboard",
+    "scenario": "operations",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "dashboard",
+      "admin",
+      "analytics"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "data-report",
+    "zhName": "数据可视化报告",
+    "enName": "Data Visualization Report",
+    "emoji": "📊",
+    "description": "把 CSV/Excel/JSON 数据转成漂亮的可视化报告页",
+    "category": "data",
+    "scenario": "finance",
+    "aspectHint": "桌面长页面",
+    "featured": 10,
+    "recommended": 0,
+    "tags": [
+      "data",
+      "report",
+      "chart",
+      "数据",
+      "报告"
+    ],
+    "example": {
+      "id": "sample-data-weekly-report",
+      "name": "数据报告 · 周报",
+      "format": "csv",
+      "tagline": "KPI 卡 + Chart.js 图表 + 表格",
+      "desc": "9 个月增长数据自动渲染成可视化报告, 内联 Chart.js",
+      "hasHtml": true,
+      "hasMd": true
+    }
+  },
+  {
+    "id": "dating-web",
+    "zhName": "社区 / 配对数据墙",
+    "enName": "Dating / Community Dashboard",
+    "emoji": "💞",
+    "description": "消费感配对仪表板: 信号 ticker + KPI + 30 天柱状 + 趋势",
+    "category": "dashboard",
+    "scenario": "personal",
+    "aspectHint": "桌面 1440",
+    "featured": 5,
+    "recommended": 0,
+    "tags": [
+      "dating",
+      "community",
+      "consumer"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "digital-eguide",
+    "zhName": "电子指南",
+    "enName": "Digital E-Guide",
+    "emoji": "📚",
+    "description": "两页跨页电子指南, 封面 + 课程页 + pull-quote + 步骤列表",
+    "category": "article",
+    "scenario": "marketing",
+    "aspectHint": "双页预览",
+    "featured": 6,
+    "recommended": 0,
+    "tags": [
+      "eguide",
+      "lookbook",
+      "lead magnet",
+      "playbook"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "doc-kami-parchment",
+    "zhName": "Kami 羊皮纸文档",
+    "enName": "Kami Parchment Document",
+    "emoji": "📜",
+    "description": "暖羊皮纸底 (#f5f4ed) + 墨蓝单色 accent (#1B365D) + 单一衬线字体, 编辑级排印",
+    "category": "doc",
+    "scenario": "personal",
+    "aspectHint": "A4 / Letter 长页",
+    "featured": 48,
+    "recommended": 3,
+    "tags": [
+      "kami",
+      "parchment",
+      "serif",
+      "editorial",
+      "report",
+      "letter",
+      "one-pager"
+    ],
+    "example": {
+      "id": "sample-kami-parchment",
+      "name": "Kami 羊皮纸 · One-Pager",
+      "format": "markdown",
+      "tagline": "暖羊皮纸 + 墨蓝单色 + 单一衬线",
+      "desc": "一页 Open Design Studio Issue №26 编辑级 one-pager",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://github.com/tw93/kami",
+        "label": "tw93/kami"
+      }
+    }
+  },
+  {
+    "id": "docs-page",
+    "zhName": "技术文档页",
+    "enName": "Docs Page",
+    "emoji": "📘",
+    "description": "三栏文档页: 侧导航 + 正文 + 右 TOC",
+    "category": "doc",
+    "scenario": "engineering",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "docs",
+      "api",
+      "tutorial",
+      "guide"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "email-marketing",
+    "zhName": "营销邮件",
+    "enName": "Marketing Email",
+    "emoji": "📧",
+    "description": "产品发布邮件, 含 masthead、hero、CTA、规格表, table-fallback",
+    "category": "email",
+    "scenario": "marketing",
+    "aspectHint": "600 邮件宽",
+    "featured": 7,
+    "recommended": 0,
+    "tags": [
+      "email",
+      "newsletter",
+      "mjml"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "eng-runbook",
+    "zhName": "工程 Runbook",
+    "enName": "Engineering Runbook",
+    "emoji": "📕",
+    "description": "服务概述 + alerts 表 + dashboards + 操作命令 + on-call + 事故清单",
+    "category": "doc",
+    "scenario": "engineering",
+    "aspectHint": "长页面",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "runbook",
+      "ops",
+      "oncall",
+      "sre"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "finance-report",
+    "zhName": "季度财报",
+    "enName": "Finance Report",
+    "emoji": "💼",
+    "description": "Masthead + KPI + 收入/烧钱图 + P&L 表 + 重点 + 展望",
+    "category": "finance",
+    "scenario": "finance",
+    "aspectHint": "长页面",
+    "featured": 10,
+    "recommended": 0,
+    "tags": [
+      "financial",
+      "p&l",
+      "mrr",
+      "财报"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "flowai-team-dashboard",
+    "zhName": "FlowAI 团队管理",
+    "enName": "FlowAI Team Dashboard",
+    "emoji": "🌊",
+    "description": "三个 tab 的团队管理后台: 成员、详情、活动日志, 含图表 + CSV 导出",
+    "category": "dashboard",
+    "scenario": "operations",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "flowai",
+      "team",
+      "members"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "frame-data-chart-nyt",
+    "zhName": "NYT 风数据图表帧",
+    "enName": "NYT-Style Data Chart Frame",
+    "emoji": "📈",
+    "description": "NYT-newsroom 排版 + 错峰揭示动画 + 编辑级图表 (折线/柱/范围带)",
+    "category": "video",
+    "scenario": "video",
+    "aspectHint": "1920×1080 (16:9)",
+    "featured": 46,
+    "recommended": 0,
+    "tags": [
+      "data",
+      "chart",
+      "nyt",
+      "editorial",
+      "frame"
+    ],
+    "example": {
+      "id": "sample-frame-data-chart-nyt",
+      "name": "NYT 风折线图 · 全球用户量",
+      "format": "markdown",
+      "tagline": "编辑级图表 + 错峰揭示",
+      "desc": "8 年周活跃用户折线 + NYT red accent + 注释 mono",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · data-chart"
+      }
+    }
+  },
+  {
+    "id": "frame-flowchart-sticky",
+    "zhName": "便利贴流程图帧",
+    "enName": "Sticky Flowchart Frame",
+    "emoji": "📝",
+    "description": "SVG 曲线连接 + 便利贴节点 + 光标交互, 像白板 brainstorm",
+    "category": "video",
+    "scenario": "operations",
+    "aspectHint": "1920×1080 (16:9)",
+    "featured": 45,
+    "recommended": 0,
+    "tags": [
+      "flowchart",
+      "diagram",
+      "sticky",
+      "whiteboard",
+      "frame"
+    ],
+    "example": {
+      "id": "sample-frame-flowchart-sticky",
+      "name": "便利贴流程图 · 用户 onboarding",
+      "format": "markdown",
+      "tagline": "SVG 曲线 + 4 色便利贴",
+      "desc": "6 节点 onboarding 流程, 手写体 + 白板纸底",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · flowchart"
+      }
+    }
+  },
+  {
+    "id": "frame-glitch-title",
+    "zhName": "故障艺术标题帧",
+    "enName": "Glitch Title Frame",
+    "emoji": "⚡",
+    "description": "数字故障 / 像散偏移 / 数据腐败标题, 适合视频转场 / cyberpunk hero",
+    "category": "video",
+    "scenario": "video",
+    "aspectHint": "1920×1080 (16:9)",
+    "featured": 37,
+    "recommended": 6,
+    "tags": [
+      "glitch",
+      "cyberpunk",
+      "title",
+      "transition",
+      "vfx",
+      "frame"
+    ],
+    "example": {
+      "id": "sample-frame-glitch-title",
+      "name": "故障标题 · SIGNAL_LOST",
+      "format": "markdown",
+      "tagline": "cyan / magenta 像散 + CRT 扫描线",
+      "desc": "巨大标题 + 数据腐败伪影 + 角落 ASCII 噪点 chunks",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · glitch"
+      }
+    }
+  },
+  {
+    "id": "frame-light-leak-cinema",
+    "zhName": "胶片漏光电影帧",
+    "enName": "Light-Leak Cinematic Frame",
+    "emoji": "🎞️",
+    "description": "胶片漏光 + 颗粒噪点 + 16:9 letterbox + 衬线大字, 电影感开场 / 章节卡",
+    "category": "video",
+    "scenario": "video",
+    "aspectHint": "2.39:1 letterbox (1920×800) 或 16:9 (1920×1080)",
+    "featured": 36,
+    "recommended": 0,
+    "tags": [
+      "cinema",
+      "film",
+      "light-leak",
+      "grain",
+      "letterbox",
+      "frame"
+    ],
+    "example": {
+      "id": "sample-frame-light-leak-cinema",
+      "name": "胶片漏光 · REEL 03",
+      "format": "markdown",
+      "tagline": "暖橙漏光 + 35mm 颗粒",
+      "desc": "2.39:1 letterbox + 衬线斜体大字 + 胶片齿孔",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · light-leak"
+      }
+    }
+  },
+  {
+    "id": "frame-liquid-bg-hero",
+    "zhName": "流体背景 Hero 帧",
+    "enName": "Liquid Background Hero",
+    "emoji": "🌊",
+    "description": "WebGL 风流体置换背景 + 顶部叠加金句, 适合视频片头 / landing hero / 海报",
+    "category": "poster",
+    "scenario": "video",
+    "aspectHint": "1920×1080 (16:9) 或 1080×1920 (9:16)",
+    "featured": 39,
+    "recommended": 0,
+    "tags": [
+      "liquid",
+      "fluid",
+      "background",
+      "hero",
+      "html-in-canvas",
+      "vfx"
+    ],
+    "example": {
+      "id": "sample-frame-liquid-bg-hero",
+      "name": "流体背景 Hero · 金句",
+      "format": "markdown",
+      "tagline": "Aurora Violet 流体",
+      "desc": "多层 radial-gradient 呼吸背景 + difference 文字",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · vfx-liquid-background"
+      }
+    }
+  },
+  {
+    "id": "frame-logo-outro",
+    "zhName": "品牌 Logo 收尾帧",
+    "enName": "Logo Outro Frame",
+    "emoji": "🎬",
+    "description": "Logo 分块组装入场 + glow bloom + tagline 揭示, 适合视频片尾 / 品牌闭幕",
+    "category": "video",
+    "scenario": "video",
+    "aspectHint": "1920×1080 (16:9)",
+    "featured": 40,
+    "recommended": 8,
+    "tags": [
+      "logo",
+      "outro",
+      "branding",
+      "end-card",
+      "frame"
+    ],
+    "example": {
+      "id": "sample-frame-logo-outro",
+      "name": "品牌 Logo 收尾 · HTML Anything",
+      "format": "markdown",
+      "tagline": "Midnight Indigo + glow bloom",
+      "desc": "Logo 装配 + 品牌名 + tagline + CTA, 视频片尾用",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · logo-outro"
+      }
+    }
+  },
+  {
+    "id": "frame-macos-notification",
+    "zhName": "macOS 通知横幅",
+    "enName": "macOS Notification Banner",
+    "emoji": "🔔",
+    "description": "拟真 macOS 通知 banner + app icon + 标题正文, 适合 video overlay / 产品发布预告",
+    "category": "card",
+    "scenario": "video",
+    "aspectHint": "1920×1080 视频或 480×120 横幅",
+    "featured": 41,
+    "recommended": 0,
+    "tags": [
+      "macos",
+      "notification",
+      "banner",
+      "overlay",
+      "frame"
+    ],
+    "example": {
+      "id": "sample-frame-macos-notification",
+      "name": "macOS 通知 · 新功能发布",
+      "format": "markdown",
+      "tagline": "Big Sur 磨砂玻璃 banner",
+      "desc": "App icon + 标题 + 双行正文, 视频角落叠加用",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · macos-notification"
+      }
+    }
+  },
+  {
+    "id": "gamified-app",
+    "zhName": "游戏化 App 多屏",
+    "enName": "Gamified App",
+    "emoji": "🕹️",
+    "description": "三屏: 封面 / 今日任务带 XP / 任务详情, 暗色舞台",
+    "category": "mobile",
+    "scenario": "personal",
+    "aspectHint": "3 × iPhone",
+    "featured": 12,
+    "recommended": 0,
+    "tags": [
+      "gamified",
+      "habit",
+      "rpg",
+      "quest",
+      "xp"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "hr-onboarding",
+    "zhName": "新员工入职页",
+    "enName": "HR Onboarding",
+    "emoji": "👋",
+    "description": "首周日程 + buddy + 学习路径 + 设备 + 完成标准",
+    "category": "doc",
+    "scenario": "hr",
+    "aspectHint": "长页面",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "onboarding",
+      "入职",
+      "first week"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "invoice",
+    "zhName": "可打印发票",
+    "enName": "Printable Invoice",
+    "emoji": "🧾",
+    "description": "标准发票: 寄件/收件 + 明细 + 税 + 总额 + 付款指引",
+    "category": "finance",
+    "scenario": "finance",
+    "aspectHint": "A4",
+    "featured": 0,
+    "recommended": 13,
+    "tags": [
+      "invoice",
+      "bill",
+      "发票"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "kanban-board",
+    "zhName": "看板 / Kanban",
+    "enName": "Kanban Board",
+    "emoji": "📌",
+    "description": "To do / In progress / In review / Done 四列, 卡片 + 头像 + 泳道",
+    "category": "dashboard",
+    "scenario": "operations",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "kanban",
+      "trello",
+      "sprint",
+      "看板"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "live-dashboard",
+    "zhName": "Notion 风团队仪表板",
+    "enName": "Live Team Dashboard",
+    "emoji": "📈",
+    "description": "Notion 风团队仪表板, KPI + 7 日 sparkline + activity feed + 任务表",
+    "category": "dashboard",
+    "scenario": "operations",
+    "aspectHint": "桌面长页",
+    "featured": 1,
+    "recommended": 0,
+    "tags": [
+      "notion",
+      "team",
+      "live",
+      "dashboard"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "magazine-poster",
+    "zhName": "杂志风海报",
+    "enName": "Magazine Poster",
+    "emoji": "🗞️",
+    "description": "Sunday-paper 风格, 大字 serif headline + 双栏正文 + 编号 sections",
+    "category": "poster",
+    "scenario": "marketing",
+    "aspectHint": "竖版长图",
+    "featured": 0,
+    "recommended": 4,
+    "tags": [
+      "magazine",
+      "newsprint",
+      "editorial",
+      "manifesto"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "meeting-notes",
+    "zhName": "会议纪要",
+    "enName": "Meeting Notes",
+    "emoji": "🗒️",
+    "description": "标题 + 出席 + 议程 + 决议 + action items + 下次",
+    "category": "doc",
+    "scenario": "operations",
+    "aspectHint": "长页面",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "minutes",
+      "meeting",
+      "1:1",
+      "纪要"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "mobile-app",
+    "zhName": "iPhone App 单屏",
+    "enName": "Mobile App Screen",
+    "emoji": "📲",
+    "description": "像素级 iPhone 15 Pro 边框, 一屏 app 截图",
+    "category": "mobile",
+    "scenario": "design",
+    "aspectHint": "iPhone 15 Pro frame",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "mobile",
+      "ios",
+      "app",
+      "phone"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "mobile-onboarding",
+    "zhName": "App 引导多屏",
+    "enName": "Mobile Onboarding",
+    "emoji": "🪂",
+    "description": "三个手机框并排: splash / value-prop / sign-in",
+    "category": "mobile",
+    "scenario": "design",
+    "aspectHint": "3 × iPhone",
+    "featured": 13,
+    "recommended": 0,
+    "tags": [
+      "onboarding",
+      "ios",
+      "signup",
+      "引导"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "mockup-device-3d",
+    "zhName": "iPhone × MacBook 立体展架",
+    "enName": "Device 3D Showcase",
+    "emoji": "📱",
+    "description": "iPhone + MacBook 仿 GLTF 静态展架, 屏幕内嵌真实 HTML 内容, 玻璃镜头折射, 360° 转盘构图",
+    "category": "poster",
+    "scenario": "product",
+    "aspectHint": "1920×1080 (16:9)",
+    "featured": 47,
+    "recommended": 0,
+    "tags": [
+      "device",
+      "mockup",
+      "iphone",
+      "macbook",
+      "html-in-canvas",
+      "product"
+    ],
+    "example": {
+      "id": "sample-mockup-device-3d",
+      "name": "iPhone × MacBook 立体展架",
+      "format": "markdown",
+      "tagline": "HTML-in-Canvas 设备秀",
+      "desc": "iPhone 屏幕 + MacBook 屏幕都嵌入真实 UI 内容, 玻璃镜头折射",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · vfx-iphone-device"
+      }
+    }
+  },
+  {
+    "id": "motion-frames",
+    "zhName": "动效英雄帧",
+    "enName": "Motion Frames",
+    "emoji": "🌀",
+    "description": "可循环 CSS 动效组合: 旋转环、地球仪、计时器、视差标签",
+    "category": "video",
+    "scenario": "marketing",
+    "aspectHint": "桌面 hero",
+    "featured": 6,
+    "recommended": 0,
+    "tags": [
+      "motion",
+      "title card",
+      "loop",
+      "video poster"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "pm-spec",
+    "zhName": "PRD / 产品 Spec",
+    "enName": "Product Spec / PRD",
+    "emoji": "🧭",
+    "description": "问题 + 成功指标 + 范围 + user stories + 设计 + 发布 + 待解决",
+    "category": "doc",
+    "scenario": "product",
+    "aspectHint": "长页面",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "prd",
+      "spec",
+      "需求",
+      "product"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "poster-hero",
+    "zhName": "营销海报",
+    "enName": "Marketing Poster",
+    "emoji": "🖼️",
+    "description": "竖版海报 / 朋友圈分享图, 强视觉冲击",
+    "category": "poster",
+    "scenario": "marketing",
+    "aspectHint": "1080×1920 竖版",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "poster",
+      "海报",
+      "朋友圈"
+    ],
+    "example": {
+      "id": "sample-poster-launch",
+      "name": "营销海报 · 产品发布",
+      "format": "markdown",
+      "tagline": "9:16 朋友圈分享图",
+      "desc": "高对比度发布海报, 含 QR 码占位 + 渐变 mesh + 噪点纹理",
+      "hasHtml": true,
+      "hasMd": true
+    }
+  },
+  {
+    "id": "pricing-page",
+    "zhName": "定价页",
+    "enName": "Pricing Page",
+    "emoji": "💳",
+    "description": "三档定价 + 特性对比表 + FAQ",
+    "category": "prototype",
+    "scenario": "sales",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "pricing",
+      "plans",
+      "定价"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "prototype-web",
+    "zhName": "Web 产品原型",
+    "enName": "Web Prototype",
+    "emoji": "🛠️",
+    "description": "可点击的功能性 Web 原型, 含导航、英雄区、特性区、CTA",
+    "category": "prototype",
+    "scenario": "design",
+    "aspectHint": "1440×900 桌面",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "prototype",
+      "landing",
+      "原型"
+    ],
+    "example": {
+      "id": "sample-prototype-inkstack",
+      "name": "Web 原型 · SaaS Landing",
+      "format": "markdown",
+      "tagline": "完整可点击的 SaaS 落地页",
+      "desc": "Hero / Features / How / Voices / Pricing / Footer 一步到位",
+      "hasHtml": true,
+      "hasMd": true
+    }
+  },
+  {
+    "id": "resume-modern",
+    "zhName": "极简简历",
+    "enName": "Modern Resume",
+    "emoji": "📄",
+    "description": "现代极简简历, A4 单页, 适合打印或导出 PDF",
+    "category": "resume",
+    "scenario": "personal",
+    "aspectHint": "A4 (210×297mm)",
+    "featured": 0,
+    "recommended": 12,
+    "tags": [
+      "resume",
+      "cv",
+      "简历"
+    ],
+    "example": {
+      "id": "sample-resume-frontend",
+      "name": "极简简历 · 前端工程师",
+      "format": "markdown",
+      "tagline": "A4 单页, 可打印 / 导出 PDF",
+      "desc": "高级前端工程师简历, 两栏布局, 数字成就高亮",
+      "hasHtml": true,
+      "hasMd": true
+    }
+  },
+  {
+    "id": "saas-landing",
+    "zhName": "SaaS Landing",
+    "enName": "SaaS Landing",
+    "emoji": "🚀",
+    "description": "单页 SaaS 落地页, 含 hero/features/social-proof/pricing/CTA",
+    "category": "prototype",
+    "scenario": "marketing",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "saas",
+      "landing",
+      "marketing"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "social-carousel",
+    "zhName": "社交媒体三联",
+    "enName": "Social Carousel",
+    "emoji": "🎠",
+    "description": "三张方形卡片轮播, 标题串联, 品牌 mark + 编号",
+    "category": "card",
+    "scenario": "marketing",
+    "aspectHint": "1080×1080 ×3",
+    "featured": 7,
+    "recommended": 0,
+    "tags": [
+      "instagram",
+      "linkedin",
+      "thread",
+      "carousel",
+      "三联"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "social-media-dashboard",
+    "zhName": "社媒创作者仪表板",
+    "enName": "Social Media Dashboard",
+    "emoji": "📡",
+    "description": "平台切换 + 粉丝/互动 KPI + 增长曲线 + Top post + 热门话题",
+    "category": "dashboard",
+    "scenario": "creator",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "social",
+      "creator",
+      "analytics",
+      "x",
+      "linkedin",
+      "tiktok"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "social-media-matrix",
+    "zhName": "社媒矩阵追踪面板",
+    "enName": "Social Media Matrix Tracker",
+    "emoji": "🛰️",
+    "description": "电影感多平台社媒分析: 互动图、悬浮洞察、区间对比、明暗主题",
+    "category": "dashboard",
+    "scenario": "creator",
+    "aspectHint": "桌面长页",
+    "featured": 1,
+    "recommended": 0,
+    "tags": [
+      "matrix",
+      "tracker",
+      "multi-platform"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "social-reddit-card",
+    "zhName": "Reddit 帖子卡",
+    "enName": "Reddit Post Card",
+    "emoji": "🔺",
+    "description": "拟真 Reddit 帖子卡 + 上下投票 + 评论数, 适合视频叠加 / 故事分享",
+    "category": "card",
+    "scenario": "marketing",
+    "aspectHint": "1280×720 或 800×600",
+    "featured": 42,
+    "recommended": 0,
+    "tags": [
+      "reddit",
+      "social",
+      "card",
+      "overlay",
+      "story"
+    ],
+    "example": {
+      "id": "sample-social-reddit-card",
+      "name": "Reddit 帖子 · r/programming",
+      "format": "markdown",
+      "tagline": "Reddit dark mode + vote rail",
+      "desc": "一条 AITA 风格故事 + 12.3k upvotes + 1.2k comments",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · reddit-post"
+      }
+    }
+  },
+  {
+    "id": "social-spotify-card",
+    "zhName": "Spotify 正在播放卡",
+    "enName": "Spotify Now-Playing Card",
+    "emoji": "🎵",
+    "description": "Spotify Now Playing 风格卡: 专辑封面 + 进度条 + 播放控制, 适配视频叠加 / 个人主页",
+    "category": "card",
+    "scenario": "personal",
+    "aspectHint": "1280×720 或 600×200",
+    "featured": 43,
+    "recommended": 0,
+    "tags": [
+      "spotify",
+      "music",
+      "now-playing",
+      "card",
+      "overlay"
+    ],
+    "example": {
+      "id": "sample-social-spotify-card",
+      "name": "Spotify Now Playing · Lo-Fi",
+      "format": "markdown",
+      "tagline": "Spotify 经典 dark 卡",
+      "desc": "Lo-Fi Beats · Chillhop 进度条 1:24 / 3:42 + 控制行",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · spotify-card"
+      }
+    }
+  },
+  {
+    "id": "social-x-post-card",
+    "zhName": "X (Twitter) 帖子卡",
+    "enName": "X / Twitter Post Card",
+    "emoji": "𝕏",
+    "description": "拟真 X 推文卡片 + 互动数据 (likes/reposts/views), 适配视频叠加或图卡分享",
+    "category": "card",
+    "scenario": "marketing",
+    "aspectHint": "1280×720 或 1080×1080",
+    "featured": 44,
+    "recommended": 0,
+    "tags": [
+      "twitter",
+      "x",
+      "social",
+      "card",
+      "overlay"
+    ],
+    "example": {
+      "id": "sample-social-x-post-card",
+      "name": "X 帖子卡 · AlchainHust 金句",
+      "format": "markdown",
+      "tagline": "X dark mode + 互动数据",
+      "desc": "一条金句推文 + 12.3K likes / 1.2K reposts + 蓝勾",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · x-post"
+      }
+    }
+  },
+  {
+    "id": "sprite-animation",
+    "zhName": "像素动画解说",
+    "enName": "Sprite Animation",
+    "emoji": "🕹️",
+    "description": "像素美术 + kinetic 字体的解说帧, 纯 CSS 循环, 可录视频",
+    "category": "poster",
+    "scenario": "marketing",
+    "aspectHint": "竖版/横版均可",
+    "featured": 8,
+    "recommended": 0,
+    "tags": [
+      "pixel",
+      "8-bit",
+      "复古",
+      "explainer"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "team-okrs",
+    "zhName": "团队 OKR 追踪",
+    "enName": "Team OKRs",
+    "emoji": "🎯",
+    "description": "季度 banner + 3 个目标 + KR 进度条 + owner + 状态 pill",
+    "category": "dashboard",
+    "scenario": "product",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "okr",
+      "objectives",
+      "key results",
+      "目标"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "vfx-text-cursor",
+    "zhName": "VFX 文字光标",
+    "enName": "VFX Text Cursor",
+    "emoji": "✨",
+    "description": "光标拖光 + 彩色像散射线 + 定向光斑, 适合视频片头逐字揭示金句",
+    "category": "video",
+    "scenario": "video",
+    "aspectHint": "1920×1080 (16:9)",
+    "featured": 38,
+    "recommended": 7,
+    "tags": [
+      "vfx",
+      "text",
+      "cursor",
+      "chromatic",
+      "reveal",
+      "frame"
+    ],
+    "example": {
+      "id": "sample-vfx-text-cursor",
+      "name": "VFX 光标 · 开场金句",
+      "format": "markdown",
+      "tagline": "逐字揭示 + chromatic 拖光",
+      "desc": "光标打字 hot pink + cyan 像散, 视频开场用",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://hyperframes.heygen.com/catalog",
+        "label": "hyperframes · vfx-text-cursor"
+      }
+    }
+  },
+  {
+    "id": "video-hyperframes",
+    "zhName": "Hyperframes 视频脚本",
+    "enName": "Hyperframes Video",
+    "emoji": "🎞️",
+    "description": "Hyperframes / Remotion 兼容的连续帧动画, 可自动播放",
+    "category": "video",
+    "scenario": "video",
+    "aspectHint": "1920×1080 (16:9)",
+    "featured": 0,
+    "recommended": 5,
+    "tags": [
+      "video",
+      "hyperframes",
+      "remotion",
+      "视频"
+    ],
+    "example": {
+      "id": "sample-hyperframes-workflow",
+      "name": "Hyperframes · AI workflow 视频",
+      "format": "markdown",
+      "tagline": "8 帧自动播放, 含进度条 + 元数据",
+      "desc": "电影感动画脚本, 可直接喂给 Remotion 做成 mp4",
+      "hasHtml": true,
+      "hasMd": true,
+      "source": {
+        "url": "https://github.com/heygen-com/hyperframes",
+        "label": "heygen-com/hyperframes"
+      }
+    }
+  },
+  {
+    "id": "waitlist-page",
+    "zhName": "等候名单页",
+    "enName": "Waitlist Page",
+    "emoji": "✉️",
+    "description": "极简产品预发布落地页, 含邮箱捕获、logo、装饰图层",
+    "category": "prototype",
+    "scenario": "marketing",
+    "aspectHint": "桌面 1440",
+    "featured": 1,
+    "recommended": 0,
+    "tags": [
+      "waitlist",
+      "launch",
+      "预发布"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "web-proto-brutalist",
+    "zhName": "Brutalist 原型",
+    "enName": "Brutalist Prototype",
+    "emoji": "⬛",
+    "description": "Swiss industrial-print 风: 单字 grotesque、巨数字、ASCII 装饰",
+    "category": "prototype",
+    "scenario": "design",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 10,
+    "tags": [
+      "brutalist",
+      "swiss",
+      "industrial",
+      "hairline"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "web-proto-editorial",
+    "zhName": "Editorial 原型",
+    "enName": "Editorial Prototype",
+    "emoji": "📜",
+    "description": "Editorial-minimalist: 暖色单色 canvas + serif display + grotesque body",
+    "category": "prototype",
+    "scenario": "design",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "editorial",
+      "minimalist",
+      "serif"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "web-proto-soft",
+    "zhName": "Apple Soft 原型",
+    "enName": "Apple-tier Soft Prototype",
+    "emoji": "🫧",
+    "description": "Apple 调: 银/奶 canvas + 双层斜面卡片 + button-in-button + spring",
+    "category": "prototype",
+    "scenario": "design",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 0,
+    "tags": [
+      "apple",
+      "soft",
+      "squircle",
+      "spring"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  },
+  {
+    "id": "wireframe-sketch",
+    "zhName": "手绘线框图",
+    "enName": "Wireframe Sketch",
+    "emoji": "✏️",
+    "description": "网格背景 + marker 笔触 + 多 tab + sticky note + scribble 图表",
+    "category": "prototype",
+    "scenario": "design",
+    "aspectHint": "桌面 1440",
+    "featured": 0,
+    "recommended": 11,
+    "tags": [
+      "wireframe",
+      "lo-fi",
+      "sketch",
+      "草稿",
+      "手绘"
+    ],
+    "example": {
+      "id": "",
+      "name": "",
+      "format": "",
+      "tagline": "",
+      "desc": "",
+      "hasHtml": true,
+      "hasMd": false
+    }
+  }
+]
